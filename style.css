@@ -593,7 +593,8 @@ img {
   color: #ffffff;
   text-align: center;
   border-radius: 50%;
-  margin-right: 30px; }
+  margin-right: 30px; 
+}
 .single-course-area .course-content h4 {
   margin-bottom: 15px;
   -webkit-transition-duration: 500ms;
@@ -1251,13 +1252,9 @@ img {
   transition: .5s;
 }
 
-.calling-info .call-center span:hover {
-  color: green;
-}
-
 .icon-responsive:hover, .icon-id-card:hover, .icon-assistance:hover {
-  transform: scale(1.2) rotate(5deg);
-
+  transform: scale(1.2) rotateY(180deg);
+  transition: 1s;
 }
 
 .info-me:hover {
@@ -1274,6 +1271,19 @@ img {
   animation: aboutMe 4s ease infinite;
 }
 
+.product-me {
+  animation: rotateProduct 5s ease infinite;
+}
+
+.see-more {
+  animation: seeMore 3s ease infinite;
+}
+
+.course-icon {
+  animation: rotateIcon 5s ease infinite;
+}
+
+
 /* any */
 @keyframes rambu {
   0% {
@@ -1283,15 +1293,6 @@ img {
 
   100% {
     background-color: lime;
-  }
-}
-
-@keyframes rotateIcon {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }
 
@@ -1318,5 +1319,42 @@ img {
   }
   100% {
     transform: scale(1.5);
+  }
+}
+
+@keyframes rotateProduct {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes seeMore {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+/* ini dia */
+@keyframes rotateIcon {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateY(360deg);
   }
 }

@@ -1283,6 +1283,10 @@ img {
   animation: rotateIcon 5s ease infinite;
 }
 
+.calling-info .call-center span:hover {
+  color: chartreuse;
+}
+
 
 /* any */
 @keyframes rambu {

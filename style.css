@@ -1238,3 +1238,85 @@ img {
     font-size: 18px; }
 
 /*# sourceMappingURL=style.css.map */
+
+
+/* animate */
+.icon-telephone-2 {
+  animation: rambu 1.5s ease infinite;
+}
+
+.icon-telephone-2:hover {
+  background-color: green;
+  transform: rotate(360deg);
+  transition: .5s;
+}
+
+.calling-info .call-center span:hover {
+  color: green;
+}
+
+.icon-responsive:hover, .icon-id-card:hover, .icon-assistance:hover {
+  transform: scale(1.2) rotate(5deg);
+
+}
+
+.info-me:hover {
+  transform: scale(0.9);
+  transition: .5s;
+}
+
+.recents-blogs:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.about-me, .contact-me {
+  animation: aboutMe 4s ease infinite;
+}
+
+/* any */
+@keyframes rambu {
+  0% {
+    opacity: 0;
+    /* background-color: lightseagreen; */
+  }
+
+  100% {
+    background-color: lime;
+  }
+}
+
+@keyframes rotateIcon {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes aboutMe {
+  0% {
+    opacity: 1;
+  }
+  5% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(5deg);
+  }
+  40% {
+    transform: rotate(0deg);
+    /* transform: scale(1.1); */
+  }
+  60% {
+    transform: rotate(-5deg)
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}

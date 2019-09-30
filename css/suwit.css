@@ -1,0 +1,30 @@
+h1 {
+  text-shadow: 1px 3px 1px black;
+}
+
+.img-komputer:hover {
+  transform: scale(1.1) rotate(250deg);
+  transition: 1s;
+  cursor: pointer;
+}
+
+.gajah:hover,
+.orang:hover,
+.semut:hover {
+  transform: scale(1.08);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.info {
+  animation: vsAnimate 1.5s ease 3s infinite;
+}
+
+@keyframes vsAnimate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

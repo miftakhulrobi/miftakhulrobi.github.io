@@ -17,7 +17,7 @@ h1 {
 }
 
 .info {
-  animation: vsAnimate 1.5s ease 3s infinite;
+  animation: vsAnimate 3s ease 3s infinite;
 }
 
 @keyframes vsAnimate {

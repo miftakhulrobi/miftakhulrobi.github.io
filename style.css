@@ -1287,6 +1287,13 @@ img {
   color: chartreuse;
 }
 
+.mouseenter-animate {
+  cursor: pointer;
+  transform: rotate(180deg);
+  transition: .5s;
+}
+
+
 
 /* any */
 @keyframes rambu {

@@ -260,12 +260,12 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" id="apl">
                 <!-- Single Testimonials Area -->
                 <div class="col-12 col-md-6">
                     <div class="single-testimonial-area mb-100 d-flex wow fadeInUp" data-wow-delay="400ms">
                         <div class="testimonial-thumb">
-                            <img src="img/me.jpg" alt="">
+                            <img src="img/me.jpg" alt="" class="logo-web">
                         </div>
                         <div class="testimonial-content">
                             <h5>Sekolah</h5>
@@ -278,7 +278,7 @@
                 <div class="col-12 col-md-6">
                     <div class="single-testimonial-area mb-100 d-flex wow fadeInUp" data-wow-delay="500ms">
                         <div class="testimonial-thumb">
-                            <img src="img/me.jpg" alt="">
+                            <img src="img/me.jpg" alt="" class="logo-web">
                         </div>
                         <div class="testimonial-content">
                             <h5>Hotel</h5>
@@ -291,7 +291,7 @@
                 <div class="col-12 col-md-6">
                     <div class="single-testimonial-area mb-100 d-flex wow fadeInUp" data-wow-delay="600ms">
                         <div class="testimonial-thumb">
-                            <img src="img/me.jpg" alt="">
+                            <img src="img/me.jpg" alt="" class="logo-web">
                         </div>
                         <div class="testimonial-content">
                             <h5>Rental Mobil</h5>
@@ -304,7 +304,7 @@
                 <div class="col-12 col-md-6">
                     <div class="single-testimonial-area mb-100 d-flex wow fadeInUp" data-wow-delay="700ms">
                         <div class="testimonial-thumb">
-                            <img src="img/me.jpg" alt="">
+                            <img src="img/me.jpg" alt="" class="logo-web">
                         </div>
                         <div class="testimonial-content">
                             <h5>Jual Beli Online</h5>
@@ -553,6 +553,19 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/plugins/plugins.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
+
+    <script>
+    const img = document.querySelectorAll('.logo-web');
+    img.forEach(function(m) {
+        m.addEventListener('mouseenter', function(e) {
+            e.target.classList.add('mouseenter-animate');
+        })
+        m.addEventListener('mouseleave', function(e) {
+            e.target.classList.remove('mouseenter-animate');
+        })
+    })
+   
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Warna</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .ubah-warna-bg {
+        background-color: lightblue;
+      }
+
+      .kotak {
+        width: 25px;
+        height: 25px;
+        margin: 5px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="text-center m-3">Bermain Dengan Warna</h1>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="text-center mt-5">
+            <button type="button" class="btn btn-secondary" id="ubahwarna">
+              Ubah Warna
+            </button>
+            <button type="button" class="btn btn-secondary" id="acakwarna">
+              Acak Warna
+            </button>
+
+            <div class="mt-5 bg-danger kotak"></div>
+            <div class="form-group">
+              <input
+                type="range"
+                name="merah"
+                class="form-control"
+                min="0"
+                max="255"
+              />
+            </div>
+            <div class="mt-5 bg-success kotak"></div>
+            <div class="form-group">
+              <input
+                type="range"
+                name="hijau"
+                class="form-control"
+                min="0"
+                max="255"
+              />
+            </div>
+            <div class="mt-5 bg-primary kotak"></div>
+            <div class="form-group">
+              <input
+                type="range"
+                name="biru"
+                class="form-control"
+                min="0"
+                max="255"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <a href="index.html">Back Home</a>
+      </div>
+    </div>
+
+    <script src="js/warna.js"></script>
+  </body>
+</html>

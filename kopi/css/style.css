@@ -1,0 +1,59 @@
+html,
+body {
+  height: 100%;
+  /* background-color: rgb(228, 225, 225); */
+}
+
+.container {
+  min-height: 100%;
+  position: relative;
+}
+
+/* .box-icon-gelas {
+  width: 50px;
+  height: 50px;
+  background-color: aqua;
+  border-radius: 5px;
+  box-shadow: 0px 1px 5px 1px rgb(0, 0, 0, 0.25);
+}
+
+.box-icon-cangkir {
+  width: 50px;
+  height: 50px;
+  background-color: aqua;
+  border-radius: 5px;
+  box-shadow: 0px 1px 5px 1px rgb(0, 0, 0, 0.25);
+  opacity: 0;
+} */
+
+/* .box-icon-gelas,
+.box-icon-cangkir {
+  animation: boxIconAnimate 1s ease infinite;
+} */
+
+.box-icon-gelas-css {
+  padding: 3px;
+  background-color: orangered;
+  border-radius: 10px;
+}
+
+.box-icon-cangkir-css {
+  padding: 3px;
+  background-color: orangered;
+  border-radius: 10px;
+}
+
+.footer-page {
+  /* position: absolute; */
+  position: fixed;
+  bottom: 0;
+}
+
+@keyframes boxIconAnimate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

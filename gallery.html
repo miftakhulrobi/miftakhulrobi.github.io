@@ -53,9 +53,9 @@
                                 <ul id="nav">
                                     <li><a href="./index.html">Home</a></li>
                                     <li><a href="./about.html">About</a></li>
-                                    <li><a href="./gallery.html">Gallery</a></li>
+                                    <li class="active"><a href="./gallery.html">Gallery</a></li class="active">
                                     <!-- <li><a href="./blog.html">Blog</a></li> -->
-                                    <li class="active"><a href="./contact.html">Contact</a></li>
+                                    <li><a href="./contact.html">Contact</a></li>
                                 </ul>
                             </div>
                             <!-- Nav End -->
@@ -68,17 +68,17 @@
     <!-- Header Area End -->
 
     <!-- Breadcrumb Area Start -->
-    <section class="breadcrumb-area bg-img bg-overlay jarallax" style="background-image: url(img/bg-img/bg2.jpg);">
+    <section class="breadcrumb-area bg-img bg-overlay jarallax" style="background-image: url(img/bg-img/bg1.jpg);">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12">
                     <div class="breadcrumb-content text-center">
-                        <h2 class="page-title">Contact</h2>
+                        <h2 class="page-title">Gallery</h2>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb justify-content-center">
                                 <li class="breadcrumb-item"><a href="index.html"><i class="icon_house_alt"></i> Home</a>
                                 </li>
-                                <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                                <li class="breadcrumb-item active" aria-current="page">Gallery</li>
                             </ol>
                         </nav>
                     </div>
@@ -88,48 +88,167 @@
     </section>
     <!-- Breadcrumb Area End -->
 
-    <!-- Contact Area Start -->
-    <div class="contact-area section-padding-80-50">
-        <div class="container">
+    <!-- Gallery Area Start -->
+    <div class="alime-portfolio-area section-padding-80 clearfix">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-12 col-lg-6">
-                    <h2 class="contact-title mb-30">Let’s Work <br>Together</h2>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <!-- Contact Info -->
-                    <div class="contact-info mb-30">
-                        <p>Email</p>
-                        <a href="mailto:robinbuah@gmail.com">robinbuah@gmail.com</a>
-                    </div>
-                    <!-- Contact Info -->
-                    <div class="contact-info mb-30">
-                        <p>Call Us</p>
-                        <a href="#">+6287885112329</a>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <!-- Contact Info -->
-                    <div class="contact-info mb-30">
-                        <p>Visit Us</p>
-                        <a href="#">Kd.Putri Paron Ngawi JawaTimur</a>
+                <div class="col-12">
+                    <!-- Projects Menu -->
+                    <div class="alime-projects-menu wow fadeInUp" data-wow-delay="100ms">
+                        <div class="portfolio-menu text-center">
+                            <button class="btn active" data-filter="*">All</button>
+                            <button class="btn" data-filter=".human">Human</button>
+                            <button class="btn" data-filter=".nature">Nature</button>
+                            <button class="btn" data-filter=".country">Country</button>
+                            <button class="btn" data-filter=".video">Video</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- Contact Area End -->
 
-    <!-- Map Area Start -->
-    <div class="map-area section-padding-0-80">
-        <div class="container">
-            <div id="map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31646.165067414513!2d111.3639150057113!3d-7.4905585617489425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e79eeb490e28d0f%3A0xf4ec0a0ddea053fb!2sSDN%20KEDUNGPUTRI%201!5e0!3m2!1sid!2sbd!4v1580182770771!5m2!1sid!2sbd"
-                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <div class="row alime-portfolio">
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp"
+                    data-wow-delay="100ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/core-img/gal1.png" alt="">
+                        <div class="hover-content">
+                            <a href="img/core-img/gal1.png" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item video human mb-30 wow fadeInUp"
+                    data-wow-delay="300ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/core-img/gal2.png" alt="">
+                        <div class="hover-content">
+                            <a href="img/core-img/gal2.png" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp"
+                    data-wow-delay="500ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/core-img/gal3.png" alt="">
+                        <div class="hover-content">
+                            <a href="img/core-img/gal3.png" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp"
+                    data-wow-delay="700ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/core-img/gal4.png" alt="">
+                        <div class="hover-content">
+                            <a href="img/core-img/gal4.png" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp"
+                    data-wow-delay="100ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/core-img/gal5.png" alt="">
+                        <div class="hover-content">
+                            <a href="img/core-img/gal5.png" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item video country mb-30 wow fadeInUp"
+                    data-wow-delay="300ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/core-img/gal6.png" alt="">
+                        <div class="hover-content">
+                            <a href="img/core-img/gal6.png" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp"
+                    data-wow-delay="500ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/core-img/gal7.png" alt="">
+                        <div class="hover-content">
+                            <a href="img/core-img/gal7.png" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp"
+                    data-wow-delay="700ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/core-img/gal8.png" alt="">
+                        <div class="hover-content">
+                            <a href="img/core-img/gal8.png" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item video country mb-30 wow fadeInUp"
+                    data-wow-delay="100ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/core-img/gal9.png" alt="">
+                        <div class="hover-content">
+                            <a href="img/core-img/gal9.png" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp"
+                    data-wow-delay="300ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/core-img/gal10.png" alt="">
+                        <div class="hover-content">
+                            <a href="img/core-img/gal10.png" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp"
+                    data-wow-delay="500ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/bg-img/49.jpg" alt="">
+                        <div class="hover-content">
+                            <a href="img/bg-img/49.jpg" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp"
+                    data-wow-delay="700ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/bg-img/45.jpg" alt="">
+                        <div class="hover-content">
+                            <a href="img/bg-img/45.jpg" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 text-center wow fadeInUp" data-wow-delay="800ms">
+                    <a target="_blank" href="https://www.instagram.com/miftakhul_robi/"
+                        class="btn alime-btn btn-2 mt-15">Go Instagram</a>
+                </div>
             </div>
         </div>
     </div>
-    <!-- Map Area End -->
+    <!-- Gallery Area End -->
 
     <!-- Follow Area Start -->
     <section class="follow-area clearfix">

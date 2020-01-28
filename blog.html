@@ -6,52 +6,55 @@
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Miftakhul Robi</title>
+    <title>Alime - Photography HTML Template</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="img/core-img/favicon.ico">
+    <link rel="icon" href="./img/core-img/favicon.png">
 
-    <!-- Core Stylesheet -->
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-    <!-- ##### Preloader ##### -->
+    <!-- Preloader -->
     <div id="preloader">
-        <i class="circle-preloader"></i>
+        <div class="loader"></div>
     </div>
+    <!-- /Preloader -->
 
-    <!-- ##### Header Area Start ##### -->
-    <header class="header-area">
-
-        <!-- Top Header Area -->
-        <div class="top-header">
-            <div class="container h-100">
-                <div class="row h-100">
-                    <div class="col-12 h-100">
-                        <div class="header-content h-100 d-flex align-items-center justify-content-between">
-                            <div class="academy-logo">
-                                <a href="index.html"><img src="img/core-img/log.png" alt=""></a>
-                            </div>
-                            <div class="login-content">
-                                <!-- <a href="#">Register / Login</a> -->
-                            </div>
-                        </div>
+    <!-- Top Search Form Area -->
+    <div class="top-search-area">
+        <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <!-- Close -->
+                        <button type="button" class="btn close-btn" data-dismiss="modal"><i class="ti-close"></i></button>
+                        <!-- Form -->
+                        <form action="index.html" method="post">
+                            <input type="search" name="top-search-bar" class="form-control" placeholder="Search and hit enter...">
+                            <button type="submit">Search</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Navbar Area -->
-        <div class="academy-main-menu">
+    <!-- Header Area Start -->
+    <header class="header-area">
+        <!-- Main Header Start -->
+        <div class="main-header-area">
             <div class="classy-nav-container breakpoint-off">
                 <div class="container">
-                    <!-- Menu -->
-                    <nav class="classy-navbar justify-content-between" id="academyNav">
+                    <!-- Classy Menu -->
+                    <nav class="classy-navbar justify-content-between" id="alimeNav">
+
+                        <!-- Logo -->
+                        <a class="nav-brand" href="./index.html"><img src="./img/core-img/logo.png" alt=""></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -60,341 +63,363 @@
 
                         <!-- Menu -->
                         <div class="classy-menu">
-
-                            <!-- close btn -->
+                            <!-- Menu Close Button -->
                             <div class="classycloseIcon">
                                 <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
                             </div>
-
                             <!-- Nav Start -->
                             <div class="classynav">
-                                <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                    <li><a href="#">Games</a>
+                                <ul id="nav">
+                                    <li><a href="./index.html">Home</a></li>
+                                    <li><a href="#">Pages</a>
                                         <ul class="dropdown">
-                                            <li><a href="suwit.html">Suwit Jawa</a></li>
-                                            <li><a href="warna.html">Warna</a></li>
-                                            <li><a href="kopi.html">Mesin Kopi</a></li>
+                                            <li><a href="./index.html">- Home</a></li>
+                                            <li><a href="./about.html">- About</a></li>
+                                            <li><a href="./gallery.html">- Gallery</a></li>
+                                            <li><a href="./blog.html">- Blog</a></li>
+                                            <li><a href="./single-blog.html">- Blog Details</a></li>
+                                            <li><a href="./contact.html">- Contact</a></li>
+                                            <li><a href="#">- Dropdown</a>
+                                                <ul class="dropdown">
+                                                    <li><a href="#">- Dropdown Item</a></li>
+                                                    <li><a href="#">- Dropdown Item</a></li>
+                                                    <li><a href="#">- Dropdown Item</a></li>
+                                                    <li><a href="#">- Dropdown Item</a></li>
+                                                </ul>
+                                            </li>
                                         </ul>
                                     </li>
+                                    <li><a href="./about.html">About</a></li>
+                                    <li><a href="./gallery.html">Gallery</a></li>
+                                    <li class="active"><a href="./blog.html">Blog</a></li>
+                                    <li><a href="./contact.html">Contact</a></li>
                                 </ul>
+
+                                <!-- Search Icon -->
+                                <div class="search-icon" data-toggle="modal" data-target="#searchModal"><i class="ti-search"></i></div>
                             </div>
                             <!-- Nav End -->
-                        </div>
-
-                        <!-- Calling Info -->
-                        <div class="calling-info">
-                            <div class="call-center">
-                                <a href="http://api.whatsapp.com/send?phone=6287885112329"><i class="icon-telephone-2"></i> <span>(+62) 87885112329</span></a>
-                            </div>
                         </div>
                     </nav>
                 </div>
             </div>
         </div>
     </header>
-    <!-- ##### Header Area End ##### -->
+    <!-- Header Area End -->
 
-    <!-- ##### Breadcumb Area Start ##### -->
-    <div class="breadcumb-area bg-img" style="background-image: url(img/bg-img/bg-2.jpg);">
-        <div class="bradcumbContent">
-            <h2 class="about-me">About Me</h2>
+    <!-- Breadcrumb Area Start -->
+    <section class="breadcrumb-area bg-img bg-overlay jarallax" style="background-image: url(img/bg-img/38.jpg);">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="breadcrumb-content text-center">
+                        <h2 class="page-title">Latest Blog</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb justify-content-center">
+                                <li class="breadcrumb-item"><a href="index.html"><i class="icon_house_alt"></i> Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Blog</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <!-- ##### Breadcumb Area End ##### -->
+    </section>
+    <!-- Breadcrumb Area End -->
 
-    <!-- ##### Blog Area Start ##### -->
-    <div class="blog-area mt-50 section-padding-100">
+    <!-- Blog Area Start -->
+    <div class="alime-blog-area section-padding-80-0 mb-70">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-8">
-                    <div class="academy-blog-posts">
-                        <div class="row">
 
-                            <!-- Single Blog Start -->
-                            <div class="col-12">
-                                <div class="single-blog-post mb-50 wow fadeInUp" data-wow-delay="300ms">
-                                    <!-- Post Thumb -->
-                                    <div class="blog-post-thumb mb-50">
-                                        <img src="img/bg-img/ultah.jpg" alt="">
-                                    </div>
-                                    <!-- Post Title -->
-                                    <a href="#" class="post-title">B'Day</a>
-                                    <!-- Post Meta -->
-                                    <div class="post-meta">
-                                        <p>By <a href="#">Miftakhul Robi</a> | <a href="#">Okt 10, 2019</a> | <a href="#"></a></p>
-                                    </div>
-                                    <!-- Post Excerpt -->
-                                    <p>Happy B'day to me... Mana nih kadonya?</p>
-                                    <!-- Read More btn -->
-                                    <!-- <a href="#" class="btn academy-btn btn-sm mt-15"></a> -->
-                                </div>
+                <!-- Single Blog Area -->
+                <div class="col-12 col-lg-6">
+                    <div class="single-post-area wow fadeInUpBig" data-wow-delay="100ms">
+                        <!-- Post Thumbnail -->
+                        <a href="#" class="post-thumbnail"><img src="img/bg-img/51.jpg" alt=""></a>
+                        <!-- Post Catagory -->
+                        <a href="#" class="btn post-catagory">Photography</a>
+                        <!-- Post Conetent -->
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <a href="#">May 19, 2019</a>
+                                <a href="#">3 Comment</a>
                             </div>
-                            <!-- Single Blog Start -->
-                            <div class="col-12">
-                                <div class="single-blog-post mb-50 wow fadeInUp" data-wow-delay="300ms">
-                                    <!-- Post Thumb -->
-                                    <div class="blog-post-thumb mb-50">
-                                        <img src="img/bg-img/aq3.jpg" alt="">
-                                    </div>
-                                    <!-- Post Title -->
-                                    <a href="#" class="post-title">Batik</a>
-                                    <!-- Post Meta -->
-                                    <div class="post-meta">
-                                        <p>By <a href="#">Miftakhul Robi</a> | <a href="#">Okt 02, 2019</a> | <a href="#"></a></p>
-                                    </div>
-                                    <!-- Post Excerpt -->
-                                    <p>Selamat hari batik gaaiiissss.. Jangan lupa sarapan!</p>
-                                    <!-- Read More btn -->
-                                    <!-- <a href="#" class="btn academy-btn btn-sm mt-15"></a> -->
-                                </div>
-                            </div>
-                            <!-- Single Blog Start -->
-                            <div class="col-12">
-                                <div class="single-blog-post mb-50 wow fadeInUp" data-wow-delay="300ms">
-                                    <!-- Post Thumb -->
-                                    <div class="blog-post-thumb mb-50">
-                                        <img src="img/bg-img/aq2.jpg" alt="">
-                                    </div>
-                                    <!-- Post Title -->
-                                    <a href="#" class="post-title">Srambang Park</a>
-                                    <!-- Post Meta -->
-                                    <div class="post-meta">
-                                        <p>By <a href="#">Miftakhul Robi</a> | <a href="#">Sep 23, 2019</a> | <a href="#"></a></p>
-                                    </div>
-                                    <!-- Post Excerpt -->
-                                    <p>Jalan-jalan dulu geesss biar gak cepet EDAN, jangan ngoding mulu.. "Kebersihan sebagian dari iman" Udah pada mandi beloon??</p>
-                                    <!-- Read More btn -->
-                                    <!-- <a href="#" class="btn academy-btn btn-sm mt-15"></a> -->
-                                </div>
-                            </div>
-                            <!-- Single Blog Start -->
-                            <div class="col-12">
-                                <div class="single-blog-post mb-50 wow fadeInUp" data-wow-delay="300ms">
-                                    <!-- Post Thumb -->
-                                    <div class="blog-post-thumb mb-50">
-                                        <img src="img/bg-img/aq.jpg" alt="">
-                                    </div>
-                                    <!-- Post Title -->
-                                    <a href="#" class="post-title">Perkenalan</a>
-                                    <!-- Post Meta -->
-                                    <div class="post-meta">
-                                        <p>By <a href="#">Miftakhul Robi</a> | <a href="#">Aug 26, 2019</a> | <a href="#"></a></p>
-                                    </div>
-                                    <!-- Post Excerpt -->
-                                    <p>Perkenalkan nama saya Miftakhul Robi saya muslim umur 27 tahun dan belum menikah.. Cita-cita kedepan saya sangat simple, bekerja, menikah, punya anak, bahagia, kemudian mati, dengan khusnul khotimah aamiin.. sekian terimakasih</p>
-                                    <!-- Read More btn -->
-                                    <!-- <a href="#" class="btn academy-btn btn-sm mt-15"></a> -->
-                                </div>
-                            </div>
-
+                            <a href="#" class="post-title">The Female Body Shape Men Find Most Attractive</a>
                         </div>
                     </div>
-                    <!-- Pagination Area Start -->
-                    <!-- <div class="academy-pagination-area wow fadeInUp" data-wow-delay="400ms">
-                        <nav>
-                            <ul class="pagination">
-                                <li class="page-item active"><a class="page-link" href="#">01</a></li>
-                                <li class="page-item"><a class="page-link" href="#">02</a></li>
-                                <li class="page-item"><a class="page-link" href="#">03</a></li>
-                            </ul>
-                        </nav>
-                    </div> -->
                 </div>
 
-                <div class="col-12 col-md-4">
-                    <div class="academy-blog-sidebar">
-                        <!-- Blog Post Widget -->
-                        <!-- <div class="blog-post-search-widget mb-30">
-                            <form action="#" method="post">
-                                <input type="search" name="search" id="Search" placeholder="Search">
-                                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                            </form>
-                        </div> -->
-
-                        <!-- Blog Post Catagories -->
-                        <!-- <div class="blog-post-categories mb-30">
-                            <h5>Categories</h5>
-                            <ul>
-                                <li><a href="#">Courses</a></li>
-                                <li><a href="#">Education</a></li>
-                                <li><a href="#">Teachers</a></li>
-                                <li><a href="#">Uncategorized</a></li>
-                            </ul>
-                        </div> -->
-
-                        <!-- Latest Blog Posts Area -->
-                        <div class="latest-blog-posts mb-30">
-                            <h5>Latest Posts</h5>
-                            <!-- Single Latest Blog Post -->
-                            <div class="single-latest-blog-post d-flex mb-30">
-                                <div class="latest-blog-post-thumb">
-                                    <img class="recents-blogs" src="img/bg-img/ultah.jpg" alt="">
-                                </div>
-                                <div class="latest-blog-post-content">
-                                    <a href="#" class="post-title">
-                                        <h6>B'Day</h6>
-                                    </a>
-                                    <a href="#" class="post-date">Okt 10, 2019</a>
-                                </div>
+                <!-- Single Blog Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-post-area wow fadeInUpBig" data-wow-delay="400ms">
+                        <!-- Post Thumbnail -->
+                        <a href="#" class="post-thumbnail"><img src="img/bg-img/52.jpg" alt=""></a>
+                        <!-- Post Catagory -->
+                        <a href="#" class="btn post-catagory">Camera</a>
+                        <!-- Post Conetent -->
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <a href="#">May 19, 2019</a>
+                                <a href="#">3 Comment</a>
                             </div>
-                            <!-- Single Latest Blog Post -->
-                            <div class="single-latest-blog-post d-flex mb-30">
-                                <div class="latest-blog-post-thumb">
-                                    <img class="recents-blogs" src="img/bg-img/aq3.jpg" alt="">
-                                </div>
-                                <div class="latest-blog-post-content">
-                                    <a href="#" class="post-title">
-                                        <h6>Batik</h6>
-                                    </a>
-                                    <a href="#" class="post-date">Okt 02, 2019</a>
-                                </div>
-                            </div>
-                            <!-- Single Latest Blog Post -->
-                            <div class="single-latest-blog-post d-flex mb-30">
-                                <div class="latest-blog-post-thumb">
-                                    <img class="recents-blogs" src="img/bg-img/aq2.jpg" alt="">
-                                </div>
-                                <div class="latest-blog-post-content">
-                                    <a href="#" class="post-title">
-                                        <h6>Srambang Park</h6>
-                                    </a>
-                                    <a href="#" class="post-date">Sep 23, 2019</a>
-                                </div>
-                            </div>
-                            <!-- Single Latest Blog Post -->
-                            <div class="single-latest-blog-post d-flex mb-30">
-                                <div class="latest-blog-post-thumb">
-                                    <img class="recents-blogs" src="img/bg-img/aq.jpg" alt="">
-                                </div>
-                                <div class="latest-blog-post-content">
-                                    <a href="#" class="post-title">
-                                        <h6>Perkenalan</h6>
-                                    </a>
-                                    <a href="#" class="post-date">Aug 26, 2019</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Add Widget -->
-                        <div class="add-widget">
-                            <!-- <a href="#"><img src="img/blog-img/add.png" alt=""></a> -->
-                            <h3>
-                                ------------------------------
-                                <br>
-                                Halaman ini masih dalam pengembangan
-                                <br>
-                                ------------------------------
-                            </h3>
+                            <a href="#" class="post-title">The Female Body Shape Men Find</a>
                         </div>
                     </div>
+                </div>
+
+                <!-- Single Blog Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-post-area wow fadeInUpBig" data-wow-delay="700ms">
+                        <!-- Post Thumbnail -->
+                        <a href="#" class="post-thumbnail"><img src="img/bg-img/53.jpg" alt=""></a>
+                        <!-- Post Catagory -->
+                        <a href="#" class="btn post-catagory">Country</a>
+                        <!-- Post Conetent -->
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <a href="#">May 19, 2019</a>
+                                <a href="#">3 Comment</a>
+                            </div>
+                            <a href="#" class="post-title">Vietnam's largest art community</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Blog Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-post-area wow fadeInUpBig" data-wow-delay="100ms">
+                        <!-- Post Thumbnail -->
+                        <a href="#" class="post-thumbnail"><img src="img/bg-img/54.jpg" alt=""></a>
+                        <!-- Post Catagory -->
+                        <a href="#" class="btn post-catagory">Camera</a>
+                        <!-- Post Conetent -->
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <a href="#">May 19, 2019</a>
+                                <a href="#">3 Comment</a>
+                            </div>
+                            <a href="#" class="post-title">Photo awards of the year</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Blog Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-post-area wow fadeInUpBig" data-wow-delay="400ms">
+                        <!-- Post Thumbnail -->
+                        <a href="#" class="post-thumbnail"><img src="img/bg-img/55.jpg" alt=""></a>
+                        <!-- Post Catagory -->
+                        <a href="#" class="btn post-catagory">Tips</a>
+                        <!-- Post Conetent -->
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <a href="#">May 19, 2019</a>
+                                <a href="#">3 Comment</a>
+                            </div>
+                            <a href="#" class="post-title">The Female Body Shape Men Find</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Blog Area -->
+                <div class="col-12 col-lg-6">
+                    <div class="single-post-area wow fadeInUpBig" data-wow-delay="700ms">
+                        <!-- Post Thumbnail -->
+                        <a href="#" class="post-thumbnail"><img src="img/bg-img/56.jpg" alt=""></a>
+                        <!-- Post Catagory -->
+                        <a href="#" class="btn post-catagory">Photography</a>
+                        <!-- Post Conetent -->
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <a href="#">May 19, 2019</a>
+                                <a href="#">3 Comment</a>
+                            </div>
+                            <a href="#" class="post-title">The Female Body Shape Men Find Most Attractive</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Blog Area -->
+                <div class="col-12 col-lg-3">
+                    <div class="single-post-area wow fadeInUpBig" data-wow-delay="100ms">
+                        <!-- Post Thumbnail -->
+                        <a href="#" class="post-thumbnail"><img src="img/bg-img/57.jpg" alt=""></a>
+                        <!-- Post Catagory -->
+                        <a href="#" class="btn post-catagory">Country</a>
+                        <!-- Post Conetent -->
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <a href="#">May 19, 2019</a>
+                                <a href="#">3 Comment</a>
+                            </div>
+                            <a href="#" class="post-title">The Female Body Shape Men Find</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Blog Area -->
+                <div class="col-12 col-lg-6">
+                    <div class="single-post-area wow fadeInUpBig" data-wow-delay="400ms">
+                        <!-- Post Thumbnail -->
+                        <a href="#" class="post-thumbnail"><img src="img/bg-img/58.jpg" alt=""></a>
+                        <!-- Post Catagory -->
+                        <a href="#" class="btn post-catagory">Camera</a>
+                        <!-- Post Conetent -->
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <a href="#">May 19, 2019</a>
+                                <a href="#">3 Comment</a>
+                            </div>
+                            <a href="#" class="post-title">The Female Body Shape Men Find Most Attractive</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Blog Area -->
+                <div class="col-12 col-lg-3">
+                    <div class="single-post-area wow fadeInUpBig" data-wow-delay="700ms">
+                        <!-- Post Thumbnail -->
+                        <a href="#" class="post-thumbnail"><img src="img/bg-img/59.jpg" alt=""></a>
+                        <!-- Post Catagory -->
+                        <a href="#" class="btn post-catagory">Photography</a>
+                        <!-- Post Conetent -->
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <a href="#">May 19, 2019</a>
+                                <a href="#">3 Comment</a>
+                            </div>
+                            <a href="#" class="post-title">The Female Body Shape Men Find</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Blog Area End -->
+
+    <!-- Follow Area Start -->
+    <div class="follow-area clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center">
+                        <h2>Follow Instagram</h2>
+                        <p>@Alime_photographer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Instagram Feed Area -->
+        <div class="instragram-feed-area owl-carousel">
+            <!-- Single Instagram Item -->
+            <div class="single-instagram-item">
+                <img src="img/bg-img/11.jpg" alt="">
+                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                    <a href="#">
+                        <i class="ti-instagram" aria-hidden="true"></i>
+                        <span>Alime_photographer</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Single Instagram Item -->
+            <div class="single-instagram-item">
+                <img src="img/bg-img/12.jpg" alt="">
+                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                    <a href="#">
+                        <i class="ti-instagram" aria-hidden="true"></i>
+                        <span>Alime_photographer</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Single Instagram Item -->
+            <div class="single-instagram-item">
+                <img src="img/bg-img/13.jpg" alt="">
+                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                    <a href="#">
+                        <i class="ti-instagram" aria-hidden="true"></i>
+                        <span>Alime_photographer</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Single Instagram Item -->
+            <div class="single-instagram-item">
+                <img src="img/bg-img/14.jpg" alt="">
+                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                    <a href="#">
+                        <i class="ti-instagram" aria-hidden="true"></i>
+                        <span>Alime_photographer</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Single Instagram Item -->
+            <div class="single-instagram-item">
+                <img src="img/bg-img/15.jpg" alt="">
+                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                    <a href="#">
+                        <i class="ti-instagram" aria-hidden="true"></i>
+                        <span>Alime_photographer</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Single Instagram Item -->
+            <div class="single-instagram-item">
+                <img src="img/bg-img/16.jpg" alt="">
+                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                    <a href="#">
+                        <i class="ti-instagram" aria-hidden="true"></i>
+                        <span>Alime_photographer</span>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- ##### Blog Area End ##### -->
+    <!-- Follow Area End -->
 
-    <!-- ##### Footer Area Start ##### -->
+    <!-- Footer Area Start -->
     <footer class="footer-area">
-        <div class="main-footer-area section-padding-100-0">
-            <div class="container">
-                <div class="row">
-                    <!-- Footer Widget Area -->
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="footer-widget mb-100">
-                            <div class="widget-title">
-                                <a href="#"><img src="img/core-img/log2.png" alt=""></a>
-                            </div>
-                            <p>Jika hari ini kita berbuat baik pada seseorang pasti suatu saat ada orang lainya yang akan berbuat baik kepada kita. </p>
-                            <div class="footer-social-info">
-                                <a href="https://facebook.com/miftakhul.muqorobin.52"><i class="fa fa-facebook"></i></a>
-                                <a href="https://instagram.com/miftakhulmuqorobin"><i class="fa fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Footer Widget Area -->
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="footer-widget mb-100">
-                            <div class="widget-title">
-                                <h6>Usefull Links</h6>
-                            </div>
-                            <nav>
-                                <ul class="useful-links">
-                                    <li><a href="index.html" style="color: chartreuse">Home</a></li>
-                                    <li><a href="blog.html" style="color: chartreuse">Blog</a></li>
-                                    <!-- <li><a href="about-us.html">About Us</a></li> -->
-                                    <li><a href="contact.html" style="color: chartreuse">Contact</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                    <!-- Footer Widget Area -->
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="footer-widget mb-100">
-                            <div class="widget-title">
-                                <h6>Gallery</h6>
-                            </div>
-                            <div class="gallery-list d-flex justify-content-between flex-wrap">
-                                <a href="img/bg-img/aq.jpg" class="gallery-img" title="Perkenalan"><img src="img/bg-img/aq.jpg" alt=""></a>
-                                <!-- <a href="img/bg-img/gallery1.jpg" class="gallery-img" title="Gallery Image 1"><img src="img/bg-img/gallery1.jpg" alt=""></a>
-                                <a href="img/bg-img/gallery2.jpg" class="gallery-img" title="Gallery Image 2"><img src="img/bg-img/gallery2.jpg" alt=""></a>
-                                <a href="img/bg-img/gallery3.jpg" class="gallery-img" title="Gallery Image 3"><img src="img/bg-img/gallery3.jpg" alt=""></a> -->
-                                <!-- <a href="img/bg-img/aq2.jpg" class="gallery-img" title="Gallery Image 5"><img src="img/bg-img/aq2.jpg" alt=""></a> -->
-                                <!-- <a href="img/bg-img/gallery5.jpg" class="gallery-img" title="Gallery Image 5"><img src="img/bg-img/gallery5.jpg" alt=""></a>
-                                <a href="img/bg-img/gallery6.jpg" class="gallery-img" title="Gallery Image 6"><img src="img/bg-img/gallery6.jpg" alt=""></a> -->
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Footer Widget Area -->
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="footer-widget mb-100">
-                            <div class="widget-title">
-                                <h6>Contact</h6>
-                            </div>
-                            <div class="single-contact d-flex mb-30">
-                                <i class="icon-placeholder"></i>
-                                <p>Paron, Ngawi, Jawatimur</p>
-                            </div>
-                            <div class="single-contact d-flex mb-30">
-                                <i class="icon-telephone-1"></i>
-                                <p>Main: +6287885112329 <br></p>
-                            </div>
-                            <div class="single-contact d-flex">
-                                <i class="icon-contract"></i>
-                                <p>robinbuah@gmail.com</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="bottom-footer-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://facebook.com/miftakhul.muqorobin.52" target="_blank" style="color: darkmagenta">Miftakhul Robi</a>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-content d-flex align-items-center justify-content-between">
+                        <!-- Copywrite Text -->
+                        <div class="copywrite-text">
+                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                        </div>
+                        <!-- Footer Logo -->
+                        <div class="footer-logo">
+                            <a href="#"><img src="img/core-img/logo2.png" alt=""></a>
+                        </div>
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#"><i class="ti-facebook" aria-hidden="true"></i></a>
+                            <a href="#"><i class="ti-twitter-alt" aria-hidden="true"></i></a>
+                            <a href="#"><i class="ti-linkedin" aria-hidden="true"></i></a>
+                            <a href="#"><i class="ti-pinterest" aria-hidden="true"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-    <!-- ##### Footer Area Start ##### -->
+    <!-- Footer Area End -->
 
-    <!-- ##### All Javascript Script ##### -->
-    <!-- jQuery-2.2.4 js -->
-    <script src="js/jquery/jquery-2.2.4.min.js"></script>
-    <!-- Popper js -->
-    <script src="js/bootstrap/popper.min.js"></script>
-    <!-- Bootstrap js -->
-    <script src="js/bootstrap/bootstrap.min.js"></script>
-    <!-- All Plugins js -->
-    <script src="js/plugins/plugins.js"></script>
-    <!-- Active js -->
-    <script src="js/active.js"></script>
+    <!-- **** All JS Files ***** -->
+    <!-- jQuery 2.2.4 -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Popper -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- All Plugins -->
+    <script src="js/alime.bundle.js"></script>
+    <!-- Active -->
+    <script src="js/default-assets/active.js"></script>
+
 </body>
 
 </html>

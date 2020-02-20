@@ -11,24 +11,15 @@ body {
 /* Jumbotron */
 .jumbotron {
   position: relative;
+  background-image: url(../img/core/b2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 430px;
 }
 
 .jumbotron .container {
   z-index: 1;
   position: relative;
-}
-
-.jumbotron::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  bottom: 0;
 }
 
 .jumbotron .col-md-5 {
@@ -37,6 +28,7 @@ body {
 
 .jumbotron .col-md-7 {
   margin-top: -60px;
+  display: none;
 }
 
 .jumbotron h1 {
@@ -144,7 +136,7 @@ section.home-jasa .row-benefit .card p {
 /* BUTTON */
 .btn-grad {
   color: white;
-  background-image: linear-gradient(-315deg, rgb(248, 43, 96) 27%, #bb0b0b 74%);
+  background-color: rgb(248, 43, 96);
   border-radius: 30px;
   font-size: 17px;
   text-transform: uppercase;
@@ -153,11 +145,7 @@ section.home-jasa .row-benefit .card p {
 
 .btn-grad:hover {
   color: rgb(248, 43, 96);
-  background-image: linear-gradient(
-    -315deg,
-    rgb(222, 231, 233) 27%,
-    #e0e7eb 74%
-  );
+  background-color: rgba(0, 0, 0, 0);
   border: 1px solid rgb(248, 43, 96);
 }
 
@@ -185,6 +173,19 @@ section.home-jasa .row-benefit .card p {
     margin-top: -90px;
   }
 
+  .jumbotron::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+
   .jumbotron h1 {
     margin-top: 120px;
     font-size: 33px;
@@ -197,6 +198,7 @@ section.home-jasa .row-benefit .card p {
 
   .jumbotron .col-md-7 {
     margin-top: 0;
+    display: block;
   }
 
   .jumbotron .col-md-7 img {
@@ -228,5 +230,24 @@ section.home-jasa .row-benefit .card p {
 
   section.home-jasa .row-jasa .col-md-3:nth-child(4) {
     margin-top: 150px;
+  }
+
+  /* BUTTON */
+  .btn-grad {
+    color: white;
+    background-image: linear-gradient(
+      -315deg,
+      rgb(248, 43, 96) 27%,
+      #bb0b0b 74%
+    );
+    border-radius: 30px;
+    font-size: 17px;
+    text-transform: uppercase;
+    /* font-size: 15px; */
+  }
+  .btn-grad:hover {
+    color: rgb(248, 43, 96);
+    background-image: linear-gradient(-315deg, white 27%, white 74%);
+    border: 1px solid rgb(248, 43, 96);
   }
 }

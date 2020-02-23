@@ -46,11 +46,6 @@ body {
   font-weight: 200;
 }
 
-.jumbotron h1,
-.jumbotron p {
-  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
 .jumbotron .col-md-7 img {
   width: auto;
   float: right;
@@ -58,10 +53,37 @@ body {
   margin-right: -200px;
 }
 
-/* Produk */
+/* !Animation */
+.jumbotron h1 {
+  opacity: 0;
+  transform: translate(0, -50px);
+  transition: 0.3s;
+}
+.jumbotron h1.show {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.jumbotron p {
+  opacity: 0;
+  transition: 0.3s;
+}
+.jumbotron p.show {
+  opacity: 1;
+}
+.jumbotron a {
+  opacity: 0;
+  transform: translate(0, 50px);
+  transition: 0.3s;
+}
+.jumbotron a.show {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+/* !End */
+
+/* Produk , Home Jasa */
 .page-produk {
-  margin: 30px 0;
-  height: 400px;
+  margin: 50px 0;
 }
 
 .page-produk .col-md-12 h5,
@@ -85,30 +107,154 @@ body {
   margin-top: 5px;
 }
 
+/* Produk Home */
 .page-produk .row-produk {
-  margin: 70px 0;
+  margin: 50px 0;
 }
+
+.page-produk .row-produk a {
+  text-decoration: none;
+}
+
+.page-produk .row-produk .card-produk {
+  margin: 20px 0;
+  border-top: 3px solid white;
+  cursor: pointer;
+}
+
+.page-produk .row-produk .card-produk img {
+  border-bottom: 3px solid #dfdcdc;
+}
+
+.page-produk .row-produk .card-produk h5 {
+  padding: 20px 0;
+  color: #928f8f;
+  font-size: 18px;
+}
+
+.page-produk .row-produk .card-produk:hover {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.page-produk .row-produk .card-produk:hover img {
+  border-bottom: 3px solid rgb(248, 43, 96);
+}
+
+/* Overlay */
+.overlay {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 9999;
+  transition: 0.5s;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.overlay:target {
+  width: auto;
+  height: auto;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.overlay:target img {
+  animation: zoomFade 0.3s;
+}
+
+.overlay img {
+  max-height: 100%;
+  padding: 0 10px;
+}
+
+.overlay .close {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -10px;
+  margin-top: 50px;
+  color: white;
+  opacity: 0;
+  display: none;
+  padding: 0 5px;
+  border: 1px solid white;
+  line-height: 100%;
+}
+
+.overlay:target .close {
+  display: block;
+  animation: slideDown 0.3s forwards;
+}
+
+.next,
+.prev {
+  position: relative;
+  font-size: 30px;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.next {
+  margin-left: -30px;
+}
+
+.prev {
+  margin-right: -30px;
+}
+
+.prev:hover i,
+.next:hover i {
+  color: rgb(248, 43, 96);
+}
+
+@keyframes zoomFade {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    margin-top: -50px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 50px;
+  }
+}
+
 /* Home Jasa */
-
-section.home-jasa {
+div.home-jasa {
   margin: 70px 0;
 }
 
-section.home-jasa .row-jasa {
-  margin-top: 70px;
+div.home-jasa .row-jasa {
+  margin-top: 50px;
 }
 
-section.home-jasa .row-jasa .card,
-section.home-jasa .row-benefit .card {
+div.home-jasa .row-jasa .card-pr {
   border-top: 3px solid white;
   position: relative;
 }
 
-section.home-jasa .row-jasa .card .card-number,
-section.home-jasa .row-benefit .card .card-number {
+div.home-jasa .row-jasa .card-pr .card-number {
   width: 50px;
   height: 50px;
-  background-color: rgb(201, 196, 196);
+  background-color: white;
   border-radius: 50%;
   position: absolute;
   top: -25px;
@@ -119,25 +265,241 @@ section.home-jasa .row-benefit .card .card-number {
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
 }
 
-section.home-jasa .row-jasa .card p {
-  margin: 35px 15px;
+/* !Animation */
+div.home-jasa .row-jasa .col-md-6:nth-child(1) {
+  opacity: 0;
+  transform: translate(-50px, 0);
+  transition: 0.3s;
+}
+div.home-jasa .row-jasa .col-md-6:nth-child(2) {
+  opacity: 0;
+  transform: translate(50px, 0);
+  transition: 0.3s;
+}
+div.home-jasa .row-jasa .col-md-6:nth-child(1).show {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+div.home-jasa .row-jasa .col-md-6:nth-child(2).show {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+/* !End */
+
+div.home-jasa .row-jasa .card-pr p {
+  margin: 5px 20px;
+  color: #928f8f;
+  padding-bottom: 10px;
+}
+
+div.home-jasa .row-jasa .card-pr p.m-t-3 {
+  margin-top: 35px;
+}
+
+div.home-jasa .row-jasa .card-pr:hover {
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+  border-top: 3px solid white;
+}
+
+/* Custom Produk */
+.custom-produk {
+  margin: 70px 0;
+}
+
+.custom-produk .row-custom-produk {
+  margin-top: 30px;
+}
+
+.custom-produk .col-md-12 h5 {
+  display: inline-block;
+  width: 80px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #928f8f;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.custom-produk .col-md-12 h5::after {
+  display: block;
+  content: "";
+  border-bottom: 3px solid rgb(248, 43, 96);
+  width: 50%;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.custom-produk .row-custom-produk .card-cp h5 {
+  font-size: 22px;
+}
+
+.custom-produk .row-custom-produk .card-cp p {
+  color: #928f8f;
+}
+/* Custom Jasa */
+.custom-jasa {
+  margin: 70px 0;
+}
+
+.custom-jasa .row-custom-jasa {
+  margin-top: 50px;
+}
+
+.custom-jasa .col-md-12 h5 {
+  display: inline-block;
+  width: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #928f8f;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.custom-jasa .col-md-12 h5::after {
+  display: block;
+  content: "";
+  border-bottom: 3px solid rgb(248, 43, 96);
+  width: 50%;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.custom-jasa .row-custom-jasa h5 {
+  font-size: 22px;
+}
+
+.custom-jasa .row-custom-jasa p {
   color: #928f8f;
 }
 
-section.home-jasa .row-jasa .card:hover,
-section.home-jasa .row-benefit .card:hover {
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
-  border-top: 3px solid rgb(248, 43, 96);
+/* !Animation */
+.custom-jasa .row-custom-jasa .col-md-5:nth-child(1) {
+  opacity: 0;
+  transform: translate(-50px, 0);
+  transition: 0.3s;
 }
+.custom-jasa .row-custom-jasa .col-md-5:nth-child(2) {
+  opacity: 0;
+  transform: translate(50px, 0);
+  transition: 0.3s;
+}
+.custom-jasa .row-custom-jasa .col-md-5:nth-child(1).show {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.custom-jasa .row-custom-jasa .col-md-5:nth-child(2).show {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+/* !End */
 
-/* Home jasa row benefit */
-section.home-jasa .row-benefit .card {
+/* Tentang Kami */
+.tentang-kami {
+  text-align: center;
   margin: 50px 0;
 }
-section.home-jasa .row-benefit .card p {
-  margin: 35px 15px;
-  color: #928f8f;
+
+.tentang-kami h4 {
+  width: 170px;
+  font-size: 24px;
+  margin: 20px auto;
 }
+
+.tentang-kami h4::after {
+  display: block;
+  content: "";
+  border-bottom: 3px solid rgb(248, 43, 96);
+  width: 50%;
+  margin: 7px auto;
+}
+
+.tentang-kami p {
+  color: #928f8f;
+  text-align: center;
+}
+
+/* Partner */
+.partner {
+  margin: 70px 0;
+}
+
+.partner .row-partner {
+  margin-top: 50px;
+}
+
+.partner .col-md-12 h5 {
+  display: inline-block;
+  width: 80px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #928f8f;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.partner .col-md-12 h5::after {
+  display: block;
+  content: "";
+  border-bottom: 3px solid rgb(248, 43, 96);
+  width: 50%;
+  margin: auto;
+  margin-top: 5px;
+}
+
+/* !Animation */
+.partner .row-partner .col-lg-3 {
+  opacity: 0;
+  transform: translate(0, -50px);
+  transition: 0.3s;
+}
+.partner .row-partner .col-lg-3 {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+/* !End */
+
+/* Hubungi kami */
+.hubungi-kami {
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #0e79b8 100%);
+  padding: 30px 0 30px 0;
+}
+
+.hubungi-kami h5 {
+  font-size: 17px;
+  color: white;
+  text-transform: uppercase;
+  width: 150px;
+  margin: auto;
+}
+
+.hubungi-kami h5::after {
+  display: block;
+  content: "";
+  border-bottom: 3px solid white;
+  width: 50%;
+  margin: auto;
+  margin-top: 7px;
+}
+
+.hubungi-kami .row-hubungi-kami {
+  margin: 30px 0 0 0;
+}
+
+.hubungi-kami .row-hubungi-kami a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #ebe1e1;
+}
+
+.hubungi-kami .row-hubungi-kami a:hover {
+  color: #d6e2dc;
+}
+
+.hubungi-kami .row-hubungi-kami p {
+  color: #696666;
+}
+
 /* BUTTON */
 .btn-grad {
   color: white;
@@ -153,6 +515,44 @@ section.home-jasa .row-benefit .card p {
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid rgb(248, 43, 96);
 }
+
+.btn-wa {
+  color: white;
+  background-color: #0dc152;
+  border-radius: 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  /* font-size: 15px; */
+}
+.btn-wa:hover {
+  color: #0dc152;
+  background-color: white;
+  border: 1px solid #0dc152;
+}
+
+/* TODO */
+.nav-up {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  font-size: 30px;
+  border: 1px solid rgb(248, 43, 96);
+  line-height: 100%;
+  color: rgb(248, 43, 96);
+  padding: 5px;
+  display: block;
+}
+
+.nav-up:hover i {
+  color: rgb(248, 43, 96);
+}
+
+.sticky-top {
+  position: sticky;
+  z-index: 9999;
+  /* box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); */
+}
+/* TODO */
 
 /* RENPONSIVE */
 @media (min-width: 992px) {
@@ -208,33 +608,62 @@ section.home-jasa .row-benefit .card p {
 
   .jumbotron .col-md-7 img {
     width: auto;
-    margin-top: auto;
+    margin-top: 30px;
     margin-right: auto;
+  }
+
+  .page-produk {
+    margin: 30px 0;
   }
 
   /* Produk */
   .page-produk h4,
-  .home-jasa h4 {
+  .home-jasa h4,
+  .custom-produk h4,
+  .custom-jasa h4 {
     margin-top: 20px;
     font-weight: 380;
     font-size: 27px;
   }
 
   /* Home Jasa */
-  section.home-jasa {
-    margin-top: 350px;
+
+  /* prev next */
+
+  .next {
+    margin-left: 0px;
   }
 
-  section.home-jasa .row-jasa .col-md-3:nth-child(2) {
-    margin-top: 50px;
+  .prev {
+    margin-right: 0px;
   }
 
-  section.home-jasa .row-jasa .col-md-3:nth-child(3) {
-    margin-top: 100px;
+  /* Custom produk */
+  .custom-produk .row-custom-produk .col-md-12 {
+    margin-top: 15px;
   }
 
-  section.home-jasa .row-jasa .col-md-3:nth-child(4) {
-    margin-top: 150px;
+  /* Tentang kami */
+  .tentang-kami {
+    text-align: left;
+  }
+
+  .tentang-kami h4 {
+    margin: 100px 0 30px 0;
+    margin-left: -5px;
+  }
+
+  .tentang-kami h4::after {
+    display: block;
+    content: "";
+    border-bottom: 3px solid rgb(248, 43, 96);
+    width: 50%;
+    margin-top: 7px;
+    float: left;
+  }
+
+  .tentang-kami p {
+    text-align: left;
   }
 
   /* BUTTON */

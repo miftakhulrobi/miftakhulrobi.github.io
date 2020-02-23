@@ -11,7 +11,7 @@ body {
 /* Jumbotron */
 .jumbotron {
   position: relative;
-  background-image: url(../img/core/b2.png);
+  background-image: url(../img/core/bg2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 430px;
@@ -263,21 +263,21 @@ div.home-jasa .row-jasa .card-pr .card-number {
 /* !Animation */
 div.home-jasa .row-jasa .col-md-6:nth-child(1) {
   opacity: 0;
-  /* transform: translate(-50px, 0); */
+  transform: translate(0, 50px);
   transition: 0.3s;
 }
 div.home-jasa .row-jasa .col-md-6:nth-child(2) {
   opacity: 0;
-  /* transform: translate(50px, 0); */
+  transform: translate(0, 50px);
   transition: 0.3s;
 }
 div.home-jasa .row-jasa .col-md-6:nth-child(1).show {
   opacity: 1;
-  /* transform: translate(0, 0); */
+  transform: translate(0, 0);
 }
 div.home-jasa .row-jasa .col-md-6:nth-child(2).show {
   opacity: 1;
-  /* transform: translate(0, 0); */
+  transform: translate(0, 0);
 }
 /* !End */
 
@@ -370,21 +370,21 @@ div.home-jasa .row-jasa .card-pr:hover {
 /* !Animation */
 .custom-jasa .row-custom-jasa .col-md-5:nth-child(1) {
   opacity: 0;
-  /* transform: translate(-50px, 0); */
+  transform: translate(0, 50px);
   transition: 0.3s;
 }
 .custom-jasa .row-custom-jasa .col-md-5:nth-child(2) {
   opacity: 0;
-  /* transform: translate(50px, 0); */
+  transform: translate(0, 50px);
   transition: 0.3s;
 }
 .custom-jasa .row-custom-jasa .col-md-5:nth-child(1).show {
   opacity: 1;
-  /* transform: translate(0, 0); */
+  transform: translate(0, 0);
 }
 .custom-jasa .row-custom-jasa .col-md-5:nth-child(2).show {
   opacity: 1;
-  /* transform: translate(0, 0); */
+  transform: translate(0, 0);
 }
 /* !End */
 
@@ -447,7 +447,7 @@ div.home-jasa .row-jasa .card-pr:hover {
   transform: translate(0, -50px);
   transition: 0.3s;
 }
-.partner .row-partner .col-lg-3 {
+.partner .row-partner .col-lg-3.show {
   opacity: 1;
   transform: translate(0, 0);
 }
@@ -597,12 +597,12 @@ div.home-jasa .row-jasa .card-pr:hover {
   }
 
   .jumbotron .col-md-7 {
-    margin-top: 0;
     display: block;
+    margin-top: 70px;
   }
 
   .page-produk {
-    margin: 30px 0;
+    margin-top: -100px;
   }
 
   /* Produk */

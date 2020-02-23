@@ -46,13 +46,6 @@ body {
   font-weight: 200;
 }
 
-.jumbotron .col-md-7 img {
-  width: auto;
-  float: right;
-  margin-top: -100px;
-  margin-right: -200px;
-}
-
 /* !Animation */
 .jumbotron h1 {
   opacity: 0;
@@ -194,7 +187,7 @@ body {
 
 .next,
 .prev {
-  position: relative;
+  position: absolute;
   font-size: 30px;
   border: 1px solid white;
   color: white;
@@ -203,11 +196,13 @@ body {
 }
 
 .next {
-  margin-left: -30px;
+  top: 35%;
+  right: 0;
 }
 
 .prev {
-  margin-right: -30px;
+  top: 35%;
+  left: 0;
 }
 
 .prev:hover i,
@@ -268,21 +263,21 @@ div.home-jasa .row-jasa .card-pr .card-number {
 /* !Animation */
 div.home-jasa .row-jasa .col-md-6:nth-child(1) {
   opacity: 0;
-  transform: translate(-50px, 0);
+  /* transform: translate(-50px, 0); */
   transition: 0.3s;
 }
 div.home-jasa .row-jasa .col-md-6:nth-child(2) {
   opacity: 0;
-  transform: translate(50px, 0);
+  /* transform: translate(50px, 0); */
   transition: 0.3s;
 }
 div.home-jasa .row-jasa .col-md-6:nth-child(1).show {
   opacity: 1;
-  transform: translate(0, 0);
+  /* transform: translate(0, 0); */
 }
 div.home-jasa .row-jasa .col-md-6:nth-child(2).show {
   opacity: 1;
-  transform: translate(0, 0);
+  /* transform: translate(0, 0); */
 }
 /* !End */
 
@@ -375,21 +370,21 @@ div.home-jasa .row-jasa .card-pr:hover {
 /* !Animation */
 .custom-jasa .row-custom-jasa .col-md-5:nth-child(1) {
   opacity: 0;
-  transform: translate(-50px, 0);
+  /* transform: translate(-50px, 0); */
   transition: 0.3s;
 }
 .custom-jasa .row-custom-jasa .col-md-5:nth-child(2) {
   opacity: 0;
-  transform: translate(50px, 0);
+  /* transform: translate(50px, 0); */
   transition: 0.3s;
 }
 .custom-jasa .row-custom-jasa .col-md-5:nth-child(1).show {
   opacity: 1;
-  transform: translate(0, 0);
+  /* transform: translate(0, 0); */
 }
 .custom-jasa .row-custom-jasa .col-md-5:nth-child(2).show {
   opacity: 1;
-  transform: translate(0, 0);
+  /* transform: translate(0, 0); */
 }
 /* !End */
 
@@ -606,12 +601,6 @@ div.home-jasa .row-jasa .card-pr:hover {
     display: block;
   }
 
-  .jumbotron .col-md-7 img {
-    width: auto;
-    margin-top: 30px;
-    margin-right: auto;
-  }
-
   .page-produk {
     margin: 30px 0;
   }
@@ -631,11 +620,15 @@ div.home-jasa .row-jasa .card-pr:hover {
   /* prev next */
 
   .next {
-    margin-left: 0px;
+    right: 250px;
+    top: 50%;
+    margin-top: -30px;
   }
 
   .prev {
-    margin-right: 0px;
+    left: 250px;
+    top: 50%;
+    margin-top: -30px;
   }
 
   /* Custom produk */

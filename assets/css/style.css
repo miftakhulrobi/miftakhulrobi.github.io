@@ -24,7 +24,7 @@ h5 {
 
 .jumbotron h1 {
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 23px;
   color: white;
   margin-top: 100px;
 }
@@ -69,6 +69,11 @@ h5 {
 .tentang-kami h3 {
   text-align: center;
   margin-top: 20px;
+  font-size: 23px;
+}
+
+.tentang-kami h4 {
+  font-size: 20px;
 }
 
 .tentang-kami .row .col-md-11 p {
@@ -102,6 +107,7 @@ h5 {
   text-align: center;
   padding-top: 70px;
   margin-bottom: 50px;
+  font-size: 23px;
 }
 
 .produk .card-produk {
@@ -118,6 +124,7 @@ h5 {
 .produk .card-produk h4 {
   padding: 30px 0;
   color: rgb(117, 116, 116);
+  font-size: 20px;
 }
 
 /* Produk Jasa */
@@ -132,6 +139,7 @@ h5 {
   text-align: center;
   padding-top: 80px;
   padding-bottom: 40px;
+  font-size: 23px;
 }
 
 .produk-jasa img {
@@ -140,6 +148,7 @@ h5 {
 
 .produk-jasa h4 {
   color: white;
+  font-size: 20px;
 }
 
 .produk-jasa p {
@@ -152,6 +161,7 @@ h5 {
   padding-top: 80px;
   padding-bottom: 40px;
   text-align: center;
+  font-size: 23px;
 }
 
 .jasa img.big {
@@ -160,6 +170,10 @@ h5 {
 
 .jasa .col-2 img {
   width: 50px;
+}
+
+.jasa h4 {
+  font-size: 20px;
 }
 
 .jasa p {
@@ -171,6 +185,7 @@ h5 {
   text-align: center;
   padding-top: 80px;
   padding-bottom: 40px;
+  font-size: 23px;
 }
 
 /* Hubungi Kami */
@@ -184,6 +199,7 @@ h5 {
   text-align: center;
   padding-top: 80px;
   padding-bottom: 40px;
+  font-size: 23px;
 }
 
 .hubungi-kami .col-md-6 p {
@@ -480,6 +496,10 @@ p.footer {
     font-weight: 500;
   }
 
+  .tentang-kami h4 {
+    font-size: 1.5rem;
+  }
+
   .tentang-kami .row .col-md-11 p {
     font-size: 20px;
   }
@@ -499,15 +519,19 @@ p.footer {
 
   /* Produk */
   .produk {
-    height: 550px;
+    height: 660px;
     margin-top: 20px;
   }
 
   .produk h3 {
-    padding-top: 90px;
+    padding-top: 140px;
     margin-bottom: 70px;
     font-size: 33px;
     font-weight: 500;
+  }
+
+  .produk h4 {
+    font-size: 1.5rem;
   }
 
   /* Produk Jasa */
@@ -521,6 +545,10 @@ p.footer {
     padding-bottom: 50px;
     font-size: 33px;
     font-weight: 500;
+  }
+
+  .produk-jasa h4 {
+    font-size: 1.5rem;
   }
 
   .produk-jasa img {
@@ -540,6 +568,10 @@ p.footer {
     font-size: 33px;
     font-weight: 500;
     padding: 110px 0 80px 0;
+  }
+
+  .jasa h4 {
+    font-size: 1.5rem;
   }
 
   .jasa .col-2 img {
@@ -563,19 +595,20 @@ p.footer {
 
   /* Partner */
   .partner {
-    height: 500px;
+    height: 660px;
   }
 
   .partner h3 {
     font-size: 33px;
     font-weight: 500;
-    padding-top: 50px;
+    padding-top: 140px;
   }
 
   /* Hubungi Kami */
   .hubungi-kami {
     height: 660px;
     margin-top: 0;
+    box-sizing: border-box;
   }
 
   .hubungi-kami h3 {
@@ -625,7 +658,7 @@ p.footer {
 
   p.footer {
     font-size: 20px;
-    padding-top: 60px;
+    padding-top: 50px;
   }
 
   /* Button */

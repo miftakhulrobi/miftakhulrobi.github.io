@@ -124,7 +124,7 @@ h5 {
 .produk-jasa {
   background-image: url(/assets/img/core/bgjasa.png);
   background-size: cover;
-  height: 900px;
+  padding-bottom: 30px;
 }
 
 .produk-jasa h3 {
@@ -514,6 +514,7 @@ p.footer {
   /* Produk Jasa */
   .produk-jasa {
     height: 680px;
+    padding-bottom: 0;
   }
 
   .produk-jasa h3 {

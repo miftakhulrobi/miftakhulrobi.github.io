@@ -199,6 +199,7 @@ h5 {
   margin-top: 80px;
   position: relative;
   box-sizing: border-box;
+  margin-bottom: -25px;
 }
 
 .hubungi-kami h3 {
@@ -290,7 +291,6 @@ h5 {
 p.footer {
   text-align: center;
   padding-top: 50px;
-  padding-bottom: 30px;
 }
 
 .hubungi-kami button {

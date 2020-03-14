@@ -1,140 +1,353 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Muli", sans-serif;
 }
 
-/* Navbar */
-.navbar {
-  position: relative;
-  z-index: 1;
+h3,
+h4,
+h5 {
+  color: rgb(78, 78, 78);
 }
+
+/* Navbar */
 
 /* Jumbotron */
 .jumbotron {
+  height: 500px;
+  background-image: url(/assets/img/core/bgjumbotron.png);
+}
+
+.jumbotron h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+  color: white;
+  margin-top: 100px;
+}
+
+.jumbotron p {
+  color: rgb(194, 191, 191);
+  margin: 30px 0;
+  font-size: 17px;
+}
+
+.jumbotron a {
+  background-color: #0dc152;
+  text-transform: uppercase;
+  color: white;
   position: relative;
-  background-image: url(../img/core/bg2.jpg);
+}
+
+.jumbotron a span.wa {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url(/assets/img/sosmed/wa.png);
   background-size: cover;
-  background-repeat: no-repeat;
-  height: 430px;
+  position: absolute;
+  left: 10px;
 }
 
-.jumbotron .container {
-  z-index: 1;
-  position: relative;
+.jumbotron a span.txt {
+  padding-left: 30px;
 }
 
-.jumbotron .col-md-5 {
-  z-index: 2;
+.jumbotron a:hover span {
+  color: #bffccc;
 }
 
-.jumbotron .col-md-7 {
-  margin-top: -60px;
+/* Tentang Kami */
+.tentang-kami {
+  margin-top: -35px;
+  padding-top: 50px;
+}
+
+.tentang-kami h3 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.tentang-kami .row .col-md-11 p {
+  color: rgb(117, 116, 116);
+  margin: 20px 0;
+}
+
+/* Keunggulan */
+.tentang-kami .keunggulan {
+  margin-top: 30px;
+}
+
+.tentang-kami .keunggulan .col-10 {
+  padding-bottom: 20px;
+}
+
+.tentang-kami .keunggulan img {
+  width: 50px;
+}
+
+.tentang-kami .keunggulan p {
+  color: rgb(117, 116, 116);
+}
+
+/* Produk */
+.produk {
+  background-image: url(/assets/img/core/bgportfolio.png);
+}
+
+.produk h3 {
+  text-align: center;
+  padding-top: 70px;
+  margin-bottom: 50px;
+}
+
+.produk .card-produk {
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.produk .card-produk img {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.produk .card-produk h4 {
+  padding: 30px 0;
+  color: rgb(117, 116, 116);
+}
+
+/* Produk Jasa */
+.produk-jasa {
+  background-image: url(/assets/img/core/bgjasa.png);
+  background-size: cover;
+  height: 900px;
+}
+
+.produk-jasa h3 {
+  color: white;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.produk-jasa img {
+  width: 50px;
+}
+
+.produk-jasa h4 {
+  color: white;
+}
+
+.produk-jasa p {
+  color: rgb(194, 191, 191);
+  margin-bottom: 20px;
+}
+
+/* Jasa */
+.jasa h3 {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.jasa img.big {
   display: none;
 }
 
-.jumbotron h1 {
-  font-size: 28px;
-  text-transform: uppercase;
+.jasa .col-2 img {
+  width: 50px;
 }
 
-.jumbotron h1 span {
-  font-weight: bold;
+.jasa p {
+  color: rgb(117, 116, 116);
 }
 
-.jumbotron p {
-  margin: 30px 0;
-  color: #928f8f;
-  font-weight: 200;
-}
-
-/* !Animation */
-.jumbotron h1 {
-  opacity: 0;
-  transform: translate(0, -50px);
-  transition: 0.3s;
-}
-.jumbotron h1.show {
-  opacity: 1;
-  transform: translate(0, 0);
-}
-.jumbotron p {
-  opacity: 0;
-  transition: 0.3s;
-}
-.jumbotron p.show {
-  opacity: 1;
-}
-.jumbotron a {
-  opacity: 0;
-  transform: translate(0, 50px);
-  transition: 0.3s;
-}
-.jumbotron a.show {
-  opacity: 1;
-  transform: translate(0, 0);
-}
-/* !End */
-
-/* Produk , Home Jasa */
-.page-produk {
-  margin: 50px 0;
-}
-
-.page-produk .col-md-12 h5,
-.home-jasa .col-md-12 h5 {
-  display: inline-block;
-  width: 200px;
-  text-transform: uppercase;
+/* Partner */
+.partner h3 {
   text-align: center;
-  color: #928f8f;
-  font-size: 17px;
-  font-weight: bold;
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 
-.page-produk .col-md-12 h5::after,
-.home-jasa .col-md-12 h5::after {
-  display: block;
-  content: "";
-  border-bottom: 3px solid rgb(248, 43, 96);
-  width: 50%;
-  margin: auto;
-  margin-top: 5px;
+/* Hubungi Kami */
+.hubungi-kami {
+  background-color: #e8e8e8;
+  margin-top: 80px;
+  position: relative;
 }
 
-/* Produk Home */
-.page-produk .row-produk {
-  margin: 50px 0;
+.hubungi-kami h3 {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 
-.page-produk .row-produk a {
+.hubungi-kami .col-md-6 p {
+  color: rgb(117, 116, 116);
+  margin: 30px 0;
+}
+
+.hubungi-kami img {
+  padding-top: 40px;
+}
+
+.hubungi-kami .sosmed {
+  padding-top: 15px;
+}
+
+.hubungi-kami .sosmed a {
+  display: flex;
   text-decoration: none;
+  padding-bottom: 20px;
 }
 
-.page-produk .row-produk .card-produk {
-  margin: 20px 0;
-  border-top: 3px solid white;
-  cursor: pointer;
-}
-
-.page-produk .row-produk .card-produk img {
-  border-bottom: 3px solid #dfdcdc;
-}
-
-.page-produk .row-produk .card-produk h5 {
-  padding: 20px 0;
-  color: #928f8f;
-  font-size: 18px;
-}
-
-.page-produk .row-produk .card-produk:hover {
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+.hubungi-kami .sosmed .icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
   border-radius: 5px;
 }
 
-.page-produk .row-produk .card-produk:hover img {
-  border-bottom: 3px solid rgb(248, 43, 96);
+.hubungi-kami .sosmed span.nickname {
+  color: rgb(117, 116, 116);
+  padding-left: 20px;
+  padding-top: 5px;
 }
 
-/* Overlay */
+.hubungi-kami .sosmed .icon-wa {
+  background-color: #0dc152;
+  background-image: url(/assets/img/sosmed/wa.png);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hubungi-kami .sosmed .icon-email {
+  background-color: #d4d1d1;
+  background-image: url(/assets/img/sosmed/email.png);
+  background-size: cover;
+}
+
+.hubungi-kami .sosmed .icon-fb {
+  background-color: #3a62a4;
+  background-image: url(/assets/img/sosmed/fb.png);
+  background-size: cover;
+}
+
+.hubungi-kami .sosmed .icon-twitter {
+  background-color: #1da1f2;
+  background-image: url(/assets/img/sosmed/twitter.png);
+  background-size: cover;
+}
+
+.hubungi-kami .sosmed .icon-ig {
+  background-color: #a1287d;
+  background-image: url(/assets/img/sosmed/ig.png);
+  background-size: cover;
+}
+
+.hubungi-kami .sosmed .icon-yt {
+  background-color: #fe030f;
+  background-image: url(/assets/img/sosmed/yt.png);
+  background-size: cover;
+  background-position-x: 1px;
+}
+
+.line {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid rgb(163, 162, 162);
+}
+
+p.footer {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.hubungi-kami button {
+  color: white;
+  background-image: linear-gradient(150deg, #3a3ac4 26%, #009ffd 74%);
+}
+
+.hubungi-kami button:hover {
+  color: #bfe5fd;
+}
+
+/* To Top */
+.to-top {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  background-image: url(/assets/img/core/top.png);
+  background-size: cover;
+  bottom: 50px;
+  right: 50px;
+  z-index: 3;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.to-top.show {
+  opacity: 1;
+}
+
+/* ICON EXACta */
+.tentang-kami .col-2 img,
+.produk-jasa .col-2 img,
+.jasa .col-2 img {
+  filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
+}
+
+/* Animations */
+/* Animate Jum */
+.jumbotron h1,
+.jumbotron a,
+.jumbotron p {
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.jumbotron h1 {
+  transform: translate(0, -150px);
+}
+
+.jumbotron p {
+  transform: translate(0, -100px);
+}
+
+.jumbotron a {
+  transform: translate(0, -50px);
+}
+
+.jumbotron h1.show,
+.jumbotron a.show,
+.jumbotron p.show {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+/* Animate Pr Pk */
+.produk .container .col-md-3 {
+  transform: translate(0, -50px);
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.produk .container .col-md-3.show {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.produk .container .col-md-3 a:hover {
+  text-decoration: none;
+}
+
 .overlay {
   width: 0;
   height: 0;
@@ -142,72 +355,56 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0);
-  z-index: 9999;
-  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0.8);
   text-align: center;
+  z-index: 999;
   padding: 100px 0;
+}
+
+.overlay img {
+  max-height: 100%;
+  width: 100%;
 }
 
 .overlay:target {
   width: auto;
   height: auto;
-  right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  right: 0;
 }
 
 .overlay:target img {
-  animation: zoomFade 0.3s;
-}
-
-.overlay img {
-  max-height: 100%;
-  padding: 0 10px;
+  animation: zoomFade 0.2s;
 }
 
 .overlay .close {
   position: absolute;
-  top: 0;
-  left: 50%;
-  margin-left: -10px;
-  margin-top: 50px;
-  color: white;
-  opacity: 0;
-  display: none;
-  padding: 0 5px;
-  border: 1px solid white;
-  line-height: 100%;
+  width: 30px;
+  height: 30px;
+  background-image: url(/assets/img/core/close.png);
+  background-size: cover;
+  top: 30px;
+  left: 47%;
 }
 
-.overlay:target .close {
-  display: block;
-  animation: slideDown 0.3s forwards;
-}
-
-.next,
-.prev {
+.overlay .next,
+.overlay .prev {
   position: absolute;
-  font-size: 30px;
-  border: 1px solid white;
-  color: white;
-  cursor: pointer;
-  z-index: 1;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
 }
 
-.next {
-  top: 35%;
-  right: 0;
+.overlay .next {
+  background-image: url(/assets/img/core/next.png);
+  bottom: 20%;
+  right: 40%;
 }
 
-.prev {
-  top: 35%;
-  left: 0;
-}
-
-.prev:hover i,
-.next:hover i {
-  color: rgb(248, 43, 96);
+.overlay .prev {
+  background-image: url(/assets/img/core/prev.png);
+  bottom: 20%;
+  left: 40%;
 }
 
 @keyframes zoomFade {
@@ -221,462 +418,306 @@ body {
   }
 }
 
-@keyframes slideDown {
-  0% {
-    opacity: 0;
-    margin-top: -50px;
-  }
-  100% {
-    opacity: 1;
-    margin-top: 50px;
-  }
-}
-
-/* Home Jasa */
-div.home-jasa {
-  margin: 70px 0;
-}
-
-div.home-jasa .row-jasa {
-  margin-top: 50px;
-}
-
-div.home-jasa .row-jasa .card-pr {
-  border-top: 3px solid white;
-  position: relative;
-}
-
-div.home-jasa .row-jasa .card-pr .card-number {
-  width: 50px;
-  height: 50px;
-  background-color: white;
-  border-radius: 50%;
-  position: absolute;
-  top: -25px;
-  left: 20px;
-  font-size: 30px;
-  color: rgb(248, 43, 96);
-  text-align: center;
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
-}
-
-/* !Animation */
-div.home-jasa .row-jasa .col-md-6:nth-child(1) {
-  opacity: 0;
-  transform: translate(0, 50px);
-  transition: 0.3s;
-}
-div.home-jasa .row-jasa .col-md-6:nth-child(2) {
-  opacity: 0;
-  transform: translate(0, 50px);
-  transition: 0.3s;
-}
-div.home-jasa .row-jasa .col-md-6:nth-child(1).show {
-  opacity: 1;
-  transform: translate(0, 0);
-}
-div.home-jasa .row-jasa .col-md-6:nth-child(2).show {
-  opacity: 1;
-  transform: translate(0, 0);
-}
-/* !End */
-
-div.home-jasa .row-jasa .card-pr p {
-  margin: 5px 20px;
-  color: #928f8f;
-  padding-bottom: 10px;
-}
-
-div.home-jasa .row-jasa .card-pr p.m-t-3 {
-  margin-top: 35px;
-}
-
-div.home-jasa .row-jasa .card-pr:hover {
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
-  border-top: 3px solid white;
-}
-
-/* Custom Produk */
-.custom-produk {
-  margin: 70px 0;
-}
-
-.custom-produk .row-custom-produk {
-  margin-top: 30px;
-}
-
-.custom-produk .col-md-12 h5 {
-  display: inline-block;
-  width: 80px;
-  text-transform: uppercase;
-  text-align: center;
-  color: #928f8f;
-  font-size: 17px;
-  font-weight: bold;
-}
-
-.custom-produk .col-md-12 h5::after {
-  display: block;
-  content: "";
-  border-bottom: 3px solid rgb(248, 43, 96);
-  width: 50%;
-  margin: auto;
-  margin-top: 5px;
-}
-
-.custom-produk .row-custom-produk .card-cp h5 {
-  font-size: 22px;
-}
-
-.custom-produk .row-custom-produk .card-cp p {
-  color: #928f8f;
-}
-/* Custom Jasa */
-.custom-jasa {
-  margin: 70px 0;
-}
-
-.custom-jasa .row-custom-jasa {
-  margin-top: 50px;
-}
-
-.custom-jasa .col-md-12 h5 {
-  display: inline-block;
-  width: 50px;
-  text-transform: uppercase;
-  text-align: center;
-  color: #928f8f;
-  font-size: 17px;
-  font-weight: bold;
-}
-
-.custom-jasa .col-md-12 h5::after {
-  display: block;
-  content: "";
-  border-bottom: 3px solid rgb(248, 43, 96);
-  width: 50%;
-  margin: auto;
-  margin-top: 5px;
-}
-
-.custom-jasa .row-custom-jasa h5 {
-  font-size: 22px;
-}
-
-.custom-jasa .row-custom-jasa p {
-  color: #928f8f;
-}
-
-/* !Animation */
-.custom-jasa .row-custom-jasa .col-md-5:nth-child(1) {
-  opacity: 0;
-  transform: translate(0, 50px);
-  transition: 0.3s;
-}
-.custom-jasa .row-custom-jasa .col-md-5:nth-child(2) {
-  opacity: 0;
-  transform: translate(0, 50px);
-  transition: 0.3s;
-}
-.custom-jasa .row-custom-jasa .col-md-5:nth-child(1).show {
-  opacity: 1;
-  transform: translate(0, 0);
-}
-.custom-jasa .row-custom-jasa .col-md-5:nth-child(2).show {
-  opacity: 1;
-  transform: translate(0, 0);
-}
-/* !End */
-
-/* Tentang Kami */
-.tentang-kami {
-  text-align: center;
-  margin: 50px 0;
-}
-
-.tentang-kami h4 {
-  width: 170px;
-  font-size: 24px;
-  margin: 20px auto;
-}
-
-.tentang-kami h4::after {
-  display: block;
-  content: "";
-  border-bottom: 3px solid rgb(248, 43, 96);
-  width: 50%;
-  margin: 7px auto;
-}
-
-.tentang-kami p {
-  color: #928f8f;
-  text-align: center;
-}
-
-/* Partner */
-.partner {
-  margin: 70px 0;
-}
-
-.partner .row-partner {
-  margin-top: 50px;
-}
-
-.partner .col-md-12 h5 {
-  display: inline-block;
-  width: 80px;
-  text-transform: uppercase;
-  text-align: center;
-  color: #928f8f;
-  font-size: 17px;
-  font-weight: bold;
-}
-
-.partner .col-md-12 h5::after {
-  display: block;
-  content: "";
-  border-bottom: 3px solid rgb(248, 43, 96);
-  width: 50%;
-  margin: auto;
-  margin-top: 5px;
-}
-
-/* !Animation */
-.partner .row-partner .col-lg-3 {
-  opacity: 0;
+/* Animate partner */
+.partner .container .col {
   transform: translate(0, -50px);
   transition: 0.3s;
+  opacity: 0;
 }
-.partner .row-partner .col-lg-3.show {
-  opacity: 1;
+
+.partner .container .col.show {
   transform: translate(0, 0);
-}
-/* !End */
-
-/* Hubungi kami */
-.hubungi-kami {
-  background-image: url(../img/core/bg2.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 30px 0 30px 0;
+  opacity: 1;
 }
 
-.hubungi-kami h5 {
-  font-size: 17px;
-  color: #928f8f;
-  text-transform: uppercase;
-  width: 150px;
-  font-weight: bold;
-  margin: auto;
-}
-
-.hubungi-kami h5::after {
-  display: block;
-  content: "";
-  border-bottom: 3px solid rgb(248, 43, 96);
-  width: 50%;
-  margin: auto;
-  margin-top: 7px;
-}
-
-.hubungi-kami .row-hubungi-kami {
-  margin: 30px 0 0 0;
-}
-
-.hubungi-kami .row-hubungi-kami a {
-  font-size: 18px;
-  text-decoration: none;
-  color: #222121;
-}
-
-.hubungi-kami .row-hubungi-kami a:hover {
-  color: #d6e2dc;
-}
-
-.hubungi-kami .row-hubungi-kami p {
-  color: #928f8f;
-}
-
-/* BUTTON */
-.btn-grad {
-  color: white;
-  background-color: rgb(248, 43, 96);
-  border-radius: 30px;
-  font-size: 17px;
-  text-transform: uppercase;
-  /* font-size: 15px; */
-}
-
-.btn-grad:hover {
-  color: rgb(248, 43, 96);
-  background-color: rgba(0, 0, 0, 0);
-  border: 1px solid rgb(248, 43, 96);
-}
-
-.btn-wa {
-  color: white;
-  background-color: #0dc152;
-  border-radius: 30px;
-  font-size: 17px;
-  text-transform: uppercase;
-  /* font-size: 15px; */
-}
-.btn-wa:hover {
-  color: #0dc152;
-  background-color: white;
-  border: 1px solid #0dc152;
-}
-
-/* TODO */
-.nav-up {
-  position: fixed;
-  bottom: 50px;
-  right: 50px;
-  font-size: 30px;
-  border: 1px solid rgb(248, 43, 96);
-  line-height: 100%;
-  color: rgb(248, 43, 96);
-  padding: 5px;
-  display: block;
-}
-
-.nav-up:hover i {
-  color: rgb(248, 43, 96);
-}
-
-.sticky-top {
-  position: sticky;
-  z-index: 9999;
-  /* box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); */
-}
-/* TODO */
-
-/* RENPONSIVE */
-@media (min-width: 992px) {
+/*! Responsive */
+@media (min-width: 567px) {
   /* Navbar */
-  .navbar .nav-link {
-    text-transform: uppercase;
+  .navbar {
+    margin-top: 20px;
   }
 
-  .navbar .nav-link:hover::after {
-    display: block;
-    content: "";
-    border-bottom: 3px solid rgb(248, 43, 96);
-    width: 50%;
-    margin: auto;
-    padding-bottom: 5px;
-    margin-bottom: -8px;
+  .navbar .navbar-collapse .navbar-nav a {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+  }
+
+  .navbar .navbar-collapse .navbar-nav a:hover {
+    color: rgb(65, 191, 250);
   }
 
   /* Jumbotron */
-
   .jumbotron {
-    height: 640px;
-    margin-top: -90px;
-  }
-
-  .jumbotron::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    bottom: 0;
-  }
-
-  .jumbotron h1 {
-    margin-top: 120px;
-    font-size: 33px;
-    text-transform: uppercase;
-  }
-
-  .jumbotron p {
-    margin: 30px 0;
-  }
-
-  .jumbotron .col-md-7 {
-    display: block;
-    margin-top: 70px;
-  }
-
-  .page-produk {
+    height: 795px;
     margin-top: -100px;
   }
 
-  /* Produk */
-  .page-produk h4,
-  .home-jasa h4,
-  .custom-produk h4,
-  .custom-jasa h4 {
-    margin-top: 20px;
-    font-weight: 380;
-    font-size: 27px;
+  .jumbotron h1 {
+    font-size: 35px;
+    margin-top: 225px;
+    font-weight: 500;
   }
 
-  /* Home Jasa */
-
-  /* prev next */
-
-  .next {
-    right: 250px;
-    top: 50%;
-    margin-top: -30px;
+  .jumbotron p {
+    margin: 45px 0;
+    font-size: 23px;
   }
 
-  .prev {
-    left: 250px;
-    top: 50%;
-    margin-top: -30px;
+  .jumbotron a span.wa {
+    width: 30px;
+    height: 30px;
   }
 
-  /* Custom produk */
-  .custom-produk .row-custom-produk .col-md-12 {
-    margin-top: 15px;
-  }
-
-  /* Tentang kami */
+  /* Tentang Kami */
   .tentang-kami {
-    text-align: left;
+    height: 660px;
+    padding: 50px;
   }
 
-  .tentang-kami h4 {
-    margin: 100px 0 30px 0;
-    margin-left: -5px;
+  .tentang-kami h3 {
+    font-size: 33px;
+    font-weight: 500;
   }
 
-  .tentang-kami h4::after {
+  .tentang-kami .row .col-md-11 p {
+    font-size: 20px;
+  }
+
+  /* Keunggulan */
+  .tentang-kami .keunggulan {
+    margin-top: 50px;
+  }
+
+  .tentang-kami .keunggulan img {
+    width: 70px;
+  }
+
+  .tentang-kami .keunggulan p {
+    font-size: 20px;
+  }
+
+  /* Produk */
+  .produk {
+    height: 550px;
+    margin-top: 20px;
+  }
+
+  .produk h3 {
+    padding-top: 90px;
+    margin-bottom: 70px;
+    font-size: 33px;
+    font-weight: 500;
+  }
+
+  /* Produk Jasa */
+  .produk-jasa {
+    height: 680px;
+  }
+
+  .produk-jasa h3 {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    font-size: 33px;
+    font-weight: 500;
+  }
+
+  .produk-jasa img {
+    width: 70px;
+  }
+
+  .produk-jasa p {
+    font-size: 20px;
+  }
+
+  /* Jasa */
+  .jasa {
+    height: 660px;
+  }
+
+  .jasa h3 {
+    font-size: 33px;
+    font-weight: 500;
+    padding: 110px 0 80px 0;
+  }
+
+  .jasa .col-2 img {
+    width: 70px;
+  }
+
+  .jasa p {
+    padding-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .jasa img.big {
     display: block;
-    content: "";
-    border-bottom: 3px solid rgb(248, 43, 96);
-    width: 50%;
-    margin-top: 7px;
-    float: left;
+    transform: scale(0.9);
   }
 
-  .tentang-kami p {
-    text-align: left;
+  .jasa h4,
+  .jasa p {
+    padding-left: 20px;
   }
 
-  /* BUTTON */
-  .btn-grad {
-    color: white;
-    background-image: linear-gradient(
-      -315deg,
-      rgb(248, 43, 96) 27%,
-      #bb0b0b 74%
-    );
-    border-radius: 30px;
-    font-size: 17px;
-    text-transform: uppercase;
-    /* font-size: 15px; */
+  /* Partner */
+  .partner {
+    height: 500px;
   }
-  .btn-grad:hover {
-    color: rgb(248, 43, 96);
-    background-image: linear-gradient(-315deg, white 27%, white 74%);
-    border: 1px solid rgb(248, 43, 96);
+
+  .partner h3 {
+    font-size: 33px;
+    font-weight: 500;
+    padding-top: 50px;
+  }
+
+  /* Hubungi Kami */
+  .hubungi-kami {
+    height: 660px;
+    margin-top: 0;
+  }
+
+  .hubungi-kami h3 {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    font-size: 33px;
+    font-weight: 500;
+  }
+
+  .hubungi-kami .col-hk:nth-child(1) {
+    padding-right: 25px;
+  }
+
+  .hubungi-kami .col-hk:nth-child(2) {
+    padding-left: 25px;
+  }
+
+  .hubungi-kami input {
+    height: 50px;
+  }
+
+  .hubungi-kami .col-md-6 p {
+    font-size: 20px;
+  }
+
+  .hubungi-kami img {
+    padding-top: 0;
+  }
+
+  .hubungi-kami .sosmed a {
+    font-size: 20px;
+  }
+
+  .line {
+    bottom: 70px;
+  }
+
+  p.footer {
+    font-size: 20px;
+    padding-top: 60px;
+  }
+
+  /* Button */
+  .jumbotron a,
+  .hubungi-kami button {
+    padding: 8px 20px;
+    font-weight: 400;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+
+  /* Fixed Navbar */
+  .sticky-top {
+    position: sticky;
+  }
+
+  /* Animate */
+  /* Animate TK */
+  .tentang-kami .container .col-md-6:nth-child(1),
+  .tentang-kami .container .col-md-6:nth-child(3) {
+    transform: translate(-50px, 0);
+    transition: 0.3s;
+    opacity: 0;
+  }
+
+  .tentang-kami .container .col-md-6:nth-child(2),
+  .tentang-kami .container .col-md-6:nth-child(4) {
+    transform: translate(50px, 0);
+    transition: 0.3s;
+    opacity: 0;
+  }
+
+  .tentang-kami .container .col-md-6.show {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  /* Animate Produk */
+  .overlay {
+    padding: 100px 0;
+  }
+
+  .overlay img {
+    max-height: 100%;
+    width: auto;
+  }
+
+  .overlay .close {
+    top: 50px;
+    left: 48%;
+  }
+
+  .overlay .prev {
+    left: 240px;
+    top: 47%;
+  }
+
+  .overlay .next {
+    right: 240px;
+    top: 47%;
+  }
+
+  .produk .container .col-md-3 a:hover .card-produk {
+    transform: scale(1.08);
+    transition: 0.3s;
+  }
+
+  /* Animate Pr Js */
+  .produk-jasa .container .col-md-6:nth-child(1),
+  .produk-jasa .container .col-md-6:nth-child(3) {
+    transform: translate(-50px, 0);
+    transition: 0.3s;
+    opacity: 0;
+  }
+
+  .produk-jasa .container .col-md-6:nth-child(2),
+  .produk-jasa .container .col-md-6:nth-child(4) {
+    transform: translate(50px, 0);
+    transition: 0.3s;
+    opacity: 0;
+  }
+
+  .produk-jasa .container .col-md-6.show {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  /* Animate Hkami */
+  .hubungi-kami .container .col-hk:nth-child(1) {
+    transform: translate(-50px, 0);
+    transition: 0.3s;
+    opacity: 0;
+  }
+
+  .hubungi-kami .container .col-hk:nth-child(2) {
+    transform: translate(50px, 0);
+    transition: 0.3s;
+    opacity: 0;
+  }
+
+  .hubungi-kami .container .col-hk.show {
+    transform: translate(0, 0);
+    opacity: 1;
   }
 }

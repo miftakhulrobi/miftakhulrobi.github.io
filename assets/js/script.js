@@ -1,66 +1,106 @@
 $(window).on("load", function() {
-  $(".jumbotron h1").addClass("show");
-  $(".jumbotron p").addClass("show");
   $(".jumbotron a").addClass("show");
+  setTimeout(() => {
+    $(".jumbotron p").addClass("show");
+  }, 250);
+  setTimeout(() => {
+    $(".jumbotron h1").addClass("show");
+  }, 500);
 });
 
 $(window).scroll(function() {
   var wScroll = $(this).scrollTop();
+  if (wScroll > $(".tentang-kami").offset().top - 400) {
+    $(".to-top").addClass("show");
+  } else {
+    $(".to-top").removeClass("show");
+  }
 
-  if (wScroll > $("#produk").offset().top - 200) {
-    $(".navbar").addClass("sticky-top");
+  if (wScroll > $(".tentang-kami").offset().top - 50) {
+    $(".tentang-kami .container .col-md-6").addClass("show");
   }
-  if (wScroll > $("div.home-jasa .row-jasa .col-md-6").offset().top - 350) {
-    $("div.home-jasa .row-jasa .col-md-6").addClass("show");
-  }
-  if (
-    wScroll >
-    $("div.custom-jasa .row-custom-jasa .col-md-5").offset().top - 350
-  ) {
-    $("div.custom-jasa .row-custom-jasa .col-md-5").addClass("show");
-  }
-  if (wScroll > $(".partner").offset().top - 350) {
-    $(".partner .row-partner .col-lg-3").each(function(i) {
+
+  if (wScroll > $(".produk").offset().top - 250) {
+    $(".produk .container .col-md-3").each(function(i) {
       setTimeout(() => {
-        $(".partner .row-partner .col-lg-3")
+        $(".produk .container .col-md-3")
           .eq(i)
           .addClass("show");
       }, 300 * i);
     });
   }
+
+  if (wScroll > $(".produk-jasa").offset().top - 200) {
+    $(".produk-jasa .container .col-md-6").addClass("show");
+  }
+
+  if (wScroll > $(".partner").offset().top - 250) {
+    $(".partner .container .col").each(function(i) {
+      setTimeout(() => {
+        $(".partner .container .col")
+          .eq(i)
+          .addClass("show");
+      }, 300 * i);
+    });
+  }
+
+  if (wScroll > $(".hubungi-kami").offset().top - 250) {
+    $(".hubungi-kami .container .col-md-6.col-hk").addClass("show");
+  }
 });
 
-// Hand
-$(".nav-link").click(function() {
-  const el = $(this).attr("href");
-  goElement(el);
+// ! Hand
+
+$('.nav-link[href="#tentang-kami"]').click(function(e) {
+  e.preventDefault();
+  goElement(".tentang-kami");
 });
 
-$(".a-produk").click(function() {
-  const img = $(this).attr("href");
-  addAttr(img);
+$('.nav-link[href="#produk"]').click(function(e) {
+  e.preventDefault();
+  goElement(".tentang-kami");
 });
 
-$(".close").click(function() {
-  const img = $(this).attr("data-img");
-  goElement(img);
+$('.nav-link[href="#produk"]').click(function(e) {
+  e.preventDefault();
+  goElement(".tentang-kami");
 });
 
-$(".nav-up").click(function() {
-  goElement("#home");
+$('.nav-link[href="#jasa"]').click(function(e) {
+  e.preventDefault();
+  goElement(".jasa");
 });
 
-// Fnc
-function addAttr(img) {
-  $(".close").attr("data-img", img);
-}
+$('.nav-link[href="#partner"]').click(function(e) {
+  e.preventDefault();
+  goElement(".partner");
+});
 
-function goElement(el) {
+$('.nav-link[href="#hubungi-kami"]').click(function(e) {
+  e.preventDefault();
+  goElement(".hubungi-kami");
+});
+
+$(".to-top").on("click", function(event) {
+  event.preventDefault();
+  goElement(".navbar");
+});
+
+$(".overlay .close").on("click", function() {
   $("html,body").animate(
     {
-      scrollTop: $(el).offset().top
+      scrollTop: $(".produk").offset().top
     },
     500
   );
-  return false;
+});
+
+// Fnc
+function goElement(element) {
+  $("html,body").animate(
+    {
+      scrollTop: $(element).offset().top
+    },
+    500
+  );
 }

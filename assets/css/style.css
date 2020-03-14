@@ -185,6 +185,10 @@ h5 {
 }
 
 /* Partner */
+.partner {
+  padding-bottom: 80px;
+}
+
 .partner h3 {
   text-align: center;
   padding-top: 80px;
@@ -196,7 +200,7 @@ h5 {
 /* Hubungi Kami */
 .hubungi-kami {
   background-color: #e8e8e8;
-  margin-top: 80px;
+  /* margin-top: 80px; */
   position: relative;
   box-sizing: border-box;
   margin-bottom: -25px;
@@ -604,6 +608,7 @@ p.footer {
   /* Partner */
   .partner {
     height: 660px;
+    padding-bottom: 0;
   }
 
   .partner h3 {
@@ -615,7 +620,6 @@ p.footer {
   /* Hubungi Kami */
   .hubungi-kami {
     height: 660px;
-    margin-top: 0;
     box-sizing: border-box;
   }
 

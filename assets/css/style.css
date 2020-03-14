@@ -207,15 +207,14 @@ h5 {
 
 .hubungi-kami .sosmed .icon {
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
   border-radius: 5px;
 }
 
 .hubungi-kami .sosmed span.nickname {
   color: rgb(117, 116, 116);
   padding-left: 20px;
-  padding-top: 5px;
 }
 
 .hubungi-kami .sosmed .icon-wa {
@@ -608,6 +607,16 @@ p.footer {
 
   .hubungi-kami .sosmed a {
     font-size: 20px;
+  }
+
+  .hubungi-kami .sosmed .icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .hubungi-kami .sosmed span.nickname {
+    padding-left: 20px;
+    padding-top: 5px;
   }
 
   .line {

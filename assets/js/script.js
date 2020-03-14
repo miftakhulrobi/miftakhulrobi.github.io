@@ -56,14 +56,14 @@ $('.nav-link[href="#tentang-kami"]').click(function(e) {
   goElement(".tentang-kami");
 });
 
-$('.nav-link[href="#produk"]').click(function(e) {
+$('.nav-link[href="#tentang-kami"]').click(function(e) {
   e.preventDefault();
   goElement(".tentang-kami");
 });
 
 $('.nav-link[href="#produk"]').click(function(e) {
   e.preventDefault();
-  goElement(".tentang-kami");
+  goElement(".produk");
 });
 
 $('.nav-link[href="#jasa"]').click(function(e) {

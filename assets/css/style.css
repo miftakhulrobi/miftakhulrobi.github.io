@@ -9,14 +9,11 @@ body {
 }
 
 h3,
-h4,
-h5 {
-  color: rgb(78, 78, 78);
+h4 {
+  color: #222;
 }
 
-/* Navbar */
-
-/* Jumbotron */
+/*? Jumbotron */
 .jumbotron {
   height: 500px;
   background-image: url(/assets/img/core/bgjumbotron.png);
@@ -60,17 +57,20 @@ h5 {
   color: #bffccc;
 }
 
-/* Tentang Kami */
+/*? Tentang Kami */
 .tentang-kami {
-  margin-top: -35px;
-  padding-top: 50px;
+  box-sizing: border-box;
+  padding: 50px 0;
 }
 
 .tentang-kami h3 {
   text-align: center;
-  margin-top: 20px;
   font-size: 23px;
   font-weight: bold;
+}
+
+.tentang-kami h3.last {
+  margin-top: 20px;
 }
 
 .tentang-kami h4 {
@@ -82,7 +82,7 @@ h5 {
   margin: 20px 0;
 }
 
-/* Keunggulan */
+/*? Keunggulan */
 .tentang-kami .keunggulan {
   margin-top: 30px;
 }
@@ -99,14 +99,14 @@ h5 {
   color: rgb(117, 116, 116);
 }
 
-/* Produk */
+/*? Produk */
 .produk {
   background-image: url(/assets/img/core/bgportfolio.png);
+  padding: 80px 0;
 }
 
 .produk h3 {
   text-align: center;
-  padding-top: 70px;
   margin-bottom: 50px;
   font-size: 23px;
   font-weight: bold;
@@ -129,7 +129,7 @@ h5 {
   font-size: 20px;
 }
 
-/* Produk Jasa */
+/*? Produk Jasa */
 .produk-jasa {
   background-image: url(/assets/img/core/bgjasa.png);
   background-size: cover;
@@ -155,13 +155,17 @@ h5 {
 }
 
 .produk-jasa p {
-  color: rgb(194, 191, 191);
+  color: #fff;
   margin-bottom: 20px;
 }
 
-/* Jasa */
+/*? Jasa */
+.jasa {
+  padding: 80px 0;
+  box-sizing: border-box;
+}
+
 .jasa h3 {
-  padding-top: 80px;
   padding-bottom: 40px;
   text-align: center;
   font-size: 23px;
@@ -184,37 +188,35 @@ h5 {
   color: rgb(117, 116, 116);
 }
 
-/* Partner */
+/*? Partner */
 .partner {
-  padding-bottom: 80px;
+  box-sizing: border-box;
+  padding: 80px 0;
 }
 
 .partner h3 {
   text-align: center;
-  padding-top: 80px;
   padding-bottom: 40px;
   font-size: 23px;
   font-weight: bold;
 }
 
-/* Hubungi Kami */
+/*? Hubungi Kami */
 .hubungi-kami {
   background-color: #e8e8e8;
-  /* margin-top: 80px; */
+  padding: 80px 0;
   position: relative;
   box-sizing: border-box;
-  margin-bottom: -25px;
 }
 
 .hubungi-kami h3 {
   text-align: center;
-  padding-top: 80px;
   padding-bottom: 40px;
   font-size: 23px;
   font-weight: bold;
 }
 
-.hubungi-kami .col-md-6 p {
+.hubungi-kami .col-lg-6 p {
   color: rgb(117, 116, 116);
   padding: 30px 0;
 }
@@ -284,19 +286,6 @@ h5 {
   background-position-x: 1px;
 }
 
-.line {
-  position: absolute;
-  bottom: 40px;
-  left: 0;
-  right: 0;
-  border-bottom: 1px solid rgb(163, 162, 162);
-}
-
-p.footer {
-  text-align: center;
-  padding-top: 50px;
-}
-
 .hubungi-kami button {
   color: white;
   background-image: linear-gradient(150deg, #3a3ac4 26%, #009ffd 74%);
@@ -306,7 +295,25 @@ p.footer {
   color: #bfe5fd;
 }
 
-/* To Top */
+/*? Footer */
+.footer {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  bottom: 0;
+  border-top: 1px solid rgb(206, 212, 218);
+  line-height: 100%;
+  box-sizing: border-box;
+}
+
+.footer p {
+  text-align: center;
+  font-size: 18px;
+  color: rgb(117, 116, 116);
+  padding-top: 15px;
+}
+
+/*? To Top */
 .to-top {
   position: fixed;
   width: 30px;
@@ -324,15 +331,8 @@ p.footer {
   opacity: 1;
 }
 
-/* ICON EXACta */
-.tentang-kami .col-2 img,
-.produk-jasa .col-2 img,
-.jasa .col-2 img {
-  filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
-}
-
-/* Animations */
-/* Animate Jum */
+/*? Widget */
+/*? Animate Jumbotron */
 .jumbotron h1,
 .jumbotron a,
 .jumbotron p {
@@ -359,19 +359,19 @@ p.footer {
   opacity: 1;
 }
 
-/* Animate Pr Pk */
-.produk .container .col-md-3 {
+/*? Animate Produk */
+.produk .container .col-lg-3 {
   transform: translate(0, -50px);
   transition: 0.3s;
   opacity: 0;
 }
 
-.produk .container .col-md-3.show {
+.produk .container .col-lg-3.show {
   transform: translate(0, 0);
   opacity: 1;
 }
 
-.produk .container .col-md-3 a:hover {
+.produk .container .col-lg-3 a:hover {
   text-decoration: none;
 }
 
@@ -434,18 +434,7 @@ p.footer {
   left: 40%;
 }
 
-@keyframes zoomFade {
-  0% {
-    transform: scale(0);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-/* Animate partner */
+/*? Animate partner */
 .partner .container .col {
   transform: translate(0, -50px);
   transition: 0.3s;
@@ -457,9 +446,116 @@ p.footer {
   opacity: 1;
 }
 
-/*! Responsive */
-@media (min-width: 567px) {
-  /* Navbar */
+/*? Animations */
+@keyframes zoomFade {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/*TODO Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  /*TODO Jumbotron */
+  .jumbotron {
+    height: 795px;
+  }
+
+  .jumbotron h1 {
+    font-size: 30px;
+    margin-top: 225px;
+    font-weight: 500;
+  }
+
+  .jumbotron p {
+    margin: 45px 0;
+    font-size: 20px;
+  }
+
+  .jumbotron a span.wa {
+    width: 30px;
+    height: 30px;
+  }
+
+  /*TODO Widget Responsive */
+  /*TODO Animate Tentang Kami */
+  .tentang-kami .container .col-md-6:nth-child(1),
+  .tentang-kami .container .col-md-6:nth-child(3) {
+    transform: translate(-50px, 0);
+    transition: 0.3s;
+    opacity: 0;
+  }
+
+  .tentang-kami .container .col-md-6:nth-child(2),
+  .tentang-kami .container .col-md-6:nth-child(4) {
+    transform: translate(50px, 0);
+    transition: 0.3s;
+    opacity: 0;
+  }
+
+  .tentang-kami .container .col-md-6.show {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  /*TODO Animate Produk */
+  .overlay {
+    padding: 100px 0;
+  }
+
+  .overlay img {
+    max-height: 100%;
+    width: auto;
+  }
+
+  .overlay .close {
+    top: 50px;
+    left: 48%;
+  }
+
+  .overlay .next {
+    bottom: 20%;
+    right: 40%;
+  }
+
+  .overlay .prev {
+    bottom: 20%;
+    left: 40%;
+  }
+
+  .produk .container .col-lg-3 a:hover .card-produk {
+    transform: scale(1.08);
+    transition: 0.3s;
+  }
+
+  /*TODO Animate Produk Jasa */
+  .produk-jasa .container .col-md-6:nth-child(1),
+  .produk-jasa .container .col-md-6:nth-child(3) {
+    transform: translate(-50px, 0);
+    transition: 0.3s;
+    opacity: 0;
+  }
+
+  .produk-jasa .container .col-md-6:nth-child(2),
+  .produk-jasa .container .col-md-6:nth-child(4) {
+    transform: translate(50px, 0);
+    transition: 0.3s;
+    opacity: 0;
+  }
+
+  .produk-jasa .container .col-md-6.show {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+/*! Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /*! Navbar */
   .navbar {
     margin-top: 20px;
   }
@@ -472,10 +568,14 @@ p.footer {
   }
 
   .navbar .navbar-collapse .navbar-nav a:hover {
-    color: rgb(65, 191, 250);
+    color: rgb(248, 43, 96);
   }
 
-  /* Jumbotron */
+  .navbar .navbar-collapse .navbar-nav a.aktif {
+    color: #bb0b0b;
+  }
+
+  /*! Jumbotron */
   .jumbotron {
     height: 795px;
     margin-top: -100px;
@@ -497,10 +597,11 @@ p.footer {
     height: 30px;
   }
 
-  /* Tentang Kami */
+  /*! Tentang Kami */
   .tentang-kami {
     height: 660px;
-    padding: 50px;
+    padding: 50px 0;
+    box-sizing: border-box;
   }
 
   .tentang-kami h3 {
@@ -516,7 +617,7 @@ p.footer {
     font-size: 20px;
   }
 
-  /* Keunggulan */
+  /*! Keunggulan */
   .tentang-kami .keunggulan {
     margin-top: 50px;
   }
@@ -529,15 +630,14 @@ p.footer {
     font-size: 20px;
   }
 
-  /* Produk */
+  /*! Produk */
   .produk {
     height: 660px;
-    margin-top: 20px;
   }
 
   .produk h3 {
-    padding-top: 140px;
-    margin-bottom: 70px;
+    padding-top: 50px;
+    padding-bottom: 40px;
     font-size: 33px;
     font-weight: 500;
   }
@@ -546,7 +646,7 @@ p.footer {
     font-size: 1.5rem;
   }
 
-  /* Produk Jasa */
+  /*! Produk Jasa */
   .produk-jasa {
     height: 680px;
     padding-bottom: 0;
@@ -571,7 +671,7 @@ p.footer {
     font-size: 20px;
   }
 
-  /* Jasa */
+  /*! Jasa */
   .jasa {
     height: 660px;
   }
@@ -579,7 +679,7 @@ p.footer {
   .jasa h3 {
     font-size: 33px;
     font-weight: 500;
-    padding: 110px 0 80px 0;
+    padding-top: 40px;
   }
 
   .jasa h4 {
@@ -605,26 +705,23 @@ p.footer {
     padding-left: 20px;
   }
 
-  /* Partner */
+  /*! Partner */
   .partner {
     height: 660px;
-    padding-bottom: 0;
   }
 
   .partner h3 {
     font-size: 33px;
     font-weight: 500;
-    padding-top: 140px;
+    padding-top: 80px;
   }
 
-  /* Hubungi Kami */
+  /*! Hubungi Kami */
   .hubungi-kami {
     height: 660px;
-    box-sizing: border-box;
   }
 
   .hubungi-kami h3 {
-    padding-top: 80px;
     padding-bottom: 50px;
     font-size: 33px;
     font-weight: 500;
@@ -642,12 +739,16 @@ p.footer {
     height: 50px;
   }
 
-  .hubungi-kami .col-md-6 p {
+  .hubungi-kami .col-lg-6 p {
     font-size: 20px;
   }
 
   .hubungi-kami img {
     padding-top: 0;
+  }
+
+  .hubungi-kami .sosmed {
+    margin-top: -10px;
   }
 
   .hubungi-kami .sosmed a {
@@ -664,31 +765,8 @@ p.footer {
     padding-top: 5px;
   }
 
-  .line {
-    bottom: 70px;
-  }
-
-  p.footer {
-    font-size: 20px;
-    padding-top: 50px;
-  }
-
-  /* Button */
-  .jumbotron a,
-  .hubungi-kami button {
-    padding: 8px 20px;
-    font-weight: 400;
-    font-size: 20px;
-    border-radius: 10px;
-  }
-
-  /* Fixed Navbar */
-  .sticky-top {
-    position: sticky;
-  }
-
-  /* Animate */
-  /* Animate TK */
+  /*! Widget Responsive */
+  /*! Animate Tentang Kami */
   .tentang-kami .container .col-md-6:nth-child(1),
   .tentang-kami .container .col-md-6:nth-child(3) {
     transform: translate(-50px, 0);
@@ -708,7 +786,7 @@ p.footer {
     opacity: 1;
   }
 
-  /* Animate Produk */
+  /*! Animate Produk */
   .overlay {
     padding: 100px 0;
   }
@@ -733,12 +811,12 @@ p.footer {
     top: 47%;
   }
 
-  .produk .container .col-md-3 a:hover .card-produk {
+  .produk .container .col-lg-3 a:hover .card-produk {
     transform: scale(1.08);
     transition: 0.3s;
   }
 
-  /* Animate Pr Js */
+  /*! Animate Produk Jasa */
   .produk-jasa .container .col-md-6:nth-child(1),
   .produk-jasa .container .col-md-6:nth-child(3) {
     transform: translate(-50px, 0);
@@ -758,7 +836,7 @@ p.footer {
     opacity: 1;
   }
 
-  /* Animate Hkami */
+  /*! Animate Hubungi kami */
   .hubungi-kami .container .col-hk:nth-child(1) {
     transform: translate(-50px, 0);
     transition: 0.3s;

@@ -21,9 +21,9 @@ $(window).scroll(function() {
   }
 
   if (wScroll > $(".produk").offset().top - 250) {
-    $(".produk .container .col-md-3").each(function(i) {
+    $(".produk .container .col-lg-3").each(function(i) {
       setTimeout(() => {
-        $(".produk .container .col-md-3")
+        $(".produk .container .col-lg-3")
           .eq(i)
           .addClass("show");
       }, 300 * i);
@@ -45,11 +45,16 @@ $(window).scroll(function() {
   }
 
   if (wScroll > $(".hubungi-kami").offset().top - 250) {
-    $(".hubungi-kami .container .col-md-6.col-hk").addClass("show");
+    $(".hubungi-kami .container .col-hk").addClass("show");
   }
 });
 
 // ! Hand
+
+$(".nav-link").click(function() {
+  $(".nav-link").removeClass("aktif");
+  $(this).addClass("aktif");
+});
 
 $('.nav-link[href="#tentang-kami"]').click(function(e) {
   e.preventDefault();

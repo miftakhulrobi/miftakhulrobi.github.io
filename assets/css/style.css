@@ -551,6 +551,15 @@ h4 {
     transform: translate(0, 0);
     opacity: 1;
   }
+
+  /*TODO Button */
+  .jumbotron a,
+  .hubungi-kami button {
+    padding: 8px 20px;
+    font-weight: 400;
+    font-size: 20px;
+    border-radius: 10px;
+  }
 }
 
 /*! Large devices (desktops, 992px and up) */
@@ -763,6 +772,15 @@ h4 {
   .hubungi-kami .sosmed span.nickname {
     padding-left: 20px;
     padding-top: 5px;
+  }
+
+  /*! Button */
+  .jumbotron a,
+  .hubungi-kami button {
+    padding: 8px 20px;
+    font-weight: 400;
+    font-size: 20px;
+    border-radius: 10px;
   }
 
   /*! Widget Responsive */

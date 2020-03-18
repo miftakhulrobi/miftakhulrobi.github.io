@@ -78,7 +78,7 @@ h4 {
 }
 
 .tentang-kami .row .col-md-11 p {
-  color: rgb(117, 116, 116);
+  color: #333;
   margin: 20px 0;
 }
 
@@ -96,7 +96,7 @@ h4 {
 }
 
 .tentang-kami .keunggulan p {
-  color: rgb(117, 116, 116);
+  color: #333;
 }
 
 /*? Produk */
@@ -107,7 +107,7 @@ h4 {
 
 .produk h3 {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   font-size: 23px;
   font-weight: bold;
 }
@@ -125,8 +125,12 @@ h4 {
 
 .produk .card-produk h4 {
   padding: 30px 0;
-  color: rgb(117, 116, 116);
+  color: #333;
   font-size: 20px;
+}
+
+.produk .container .row .col-lg-12 ul li:hover a {
+  text-decoration: none;
 }
 
 /*? Produk Jasa */
@@ -185,7 +189,7 @@ h4 {
 }
 
 .jasa p {
-  color: rgb(117, 116, 116);
+  color: #333;
 }
 
 /*? Partner */
@@ -217,7 +221,7 @@ h4 {
 }
 
 .hubungi-kami .col-lg-6 p {
-  color: rgb(117, 116, 116);
+  color: #333;
   padding: 30px 0;
 }
 
@@ -243,7 +247,7 @@ h4 {
 }
 
 .hubungi-kami .sosmed span.nickname {
-  color: rgb(117, 116, 116);
+  color: #333;
   padding-left: 20px;
 }
 
@@ -299,17 +303,15 @@ h4 {
 .footer {
   position: absolute;
   width: 100%;
-  height: 40px;
-  bottom: 0;
+  bottom: 5px;
   border-top: 1px solid rgb(206, 212, 218);
-  line-height: 100%;
   box-sizing: border-box;
 }
 
 .footer p {
   text-align: center;
   font-size: 18px;
-  color: rgb(117, 116, 116);
+  color: #333;
   padding-top: 15px;
 }
 
@@ -360,21 +362,6 @@ h4 {
 }
 
 /*? Animate Produk */
-.produk .container .col-lg-3 {
-  transform: translate(0, -50px);
-  transition: 0.3s;
-  opacity: 0;
-}
-
-.produk .container .col-lg-3.show {
-  transform: translate(0, 0);
-  opacity: 1;
-}
-
-.produk .container .col-lg-3 a:hover {
-  text-decoration: none;
-}
-
 .overlay {
   width: 0;
   height: 0;
@@ -420,6 +407,7 @@ h4 {
   width: 30px;
   height: 30px;
   background-size: cover;
+  cursor: pointer;
 }
 
 .overlay .next {
@@ -455,6 +443,25 @@ h4 {
   100% {
     transform: scale(1);
     opacity: 1;
+  }
+}
+
+/* ?All Animate Produk carousel */
+@media (max-width: 575.98px) {
+  .produk .container .row:nth-child(2) {
+    display: none;
+  }
+
+  .produk .col-lg-12 .row .col-md-6 {
+    display: initial;
+  }
+
+  .produk .jcarousel-pagination {
+    display: none;
+  }
+
+  .produk .col-md-6 a {
+    text-decoration: none;
   }
 }
 
@@ -518,18 +525,13 @@ h4 {
   }
 
   .overlay .next {
-    bottom: 20%;
+    bottom: 10%;
     right: 40%;
   }
 
   .overlay .prev {
-    bottom: 20%;
+    bottom: 10%;
     left: 40%;
-  }
-
-  .produk .container .col-lg-3 a:hover .card-produk {
-    transform: scale(1.08);
-    transition: 0.3s;
   }
 
   /*TODO Animate Produk Jasa */
@@ -560,6 +562,23 @@ h4 {
     font-size: 20px;
     border-radius: 10px;
   }
+
+  /* TODO Res */
+  .produk .container .row:nth-child(2) {
+    display: none;
+  }
+
+  .produk .col-lg-12 .row .col-md-6 {
+    display: initial;
+  }
+
+  .produk .jcarousel-pagination {
+    display: none;
+  }
+
+  .produk .col-md-6 a {
+    text-decoration: none;
+  }
 }
 
 /*! Large devices (desktops, 992px and up) */
@@ -581,7 +600,7 @@ h4 {
   }
 
   .navbar .navbar-collapse .navbar-nav a.aktif {
-    color: #bb0b0b;
+    color: rgb(248, 43, 96);
   }
 
   /*! Jumbotron */
@@ -645,8 +664,8 @@ h4 {
   }
 
   .produk h3 {
-    padding-top: 50px;
-    padding-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 20px;
     font-size: 33px;
     font-weight: 500;
   }
@@ -820,16 +839,16 @@ h4 {
   }
 
   .overlay .prev {
-    left: 240px;
+    left: 220px;
     top: 47%;
   }
 
   .overlay .next {
-    right: 240px;
+    right: 220px;
     top: 47%;
   }
 
-  .produk .container .col-lg-3 a:hover .card-produk {
+  .produk .container .row .col-lg-12 ul li a:hover .card-produk {
     transform: scale(1.08);
     transition: 0.3s;
   }
@@ -870,5 +889,124 @@ h4 {
   .hubungi-kami .container .col-hk.show {
     transform: translate(0, 0);
     opacity: 1;
+  }
+
+  /* ! Image slider */
+  .produk .container {
+    position: relative;
+  }
+
+  .produk .container a.carousel-control {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+  }
+
+  .produk .container a.carousel-control.left {
+    background-image: url(/assets/img/core/left.png);
+    left: -50px;
+    top: 43%;
+    color: #009ffd;
+  }
+
+  .produk .container a.carousel-control.right {
+    background-image: url(/assets/img/core/right.png);
+    right: -50px;
+    top: 43%;
+    color: #009ffd;
+  }
+
+  .jcarousel-pagination {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    margin: 0;
+  }
+
+  .jcarousel-pagination a {
+    text-decoration: none;
+    display: inline-block;
+
+    font-size: 11px;
+    height: 10px;
+    width: 10px;
+    line-height: 10px;
+
+    background: #fff;
+    color: #4e443c;
+    border-radius: 10px;
+    text-indent: -9999px;
+
+    margin-right: 7px;
+
+    -webkit-box-shadow: 0 0 2px #4e443c;
+    -moz-box-shadow: 0 0 2px #4e443c;
+    box-shadow: 0 0 2px #4e443c;
+  }
+
+  .jcarousel-pagination a.active {
+    background: #009ffd;
+    color: #fff;
+    opacity: 1;
+
+    -webkit-box-shadow: 0 0 2px #f0efe7;
+    -moz-box-shadow: 0 0 2px #f0efe7;
+    box-shadow: 0 0 2px #f0efe7;
+  }
+
+  .produk .container .row .col-lg-12 {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .produk .container .row .col-lg-12 ul {
+    width: 10000em;
+    position: relative;
+    list-style: none;
+    margin-left: -15px;
+  }
+
+  .produk .container .row .col-lg-12 ul li {
+    float: left;
+    padding: 10px;
+    margin: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .produk .container .row .col-lg-12 ul li a {
+    display: block;
+    max-width: 100%;
+    height: auto !important;
+  }
+
+  /* !Animate Produk */
+  .produk .container .row .col-lg-12 ul li {
+    transform: translate(0, -50px);
+    transition: 0.3s;
+    opacity: 0;
+  }
+
+  .produk .container .row .col-lg-12 ul li.show {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  /* Res */
+  .produk .container .row:nth-child(1) {
+    display: none;
+  }
+
+  .produk .container .row:nth-child(2) {
+    display: initial;
+  }
+
+  .produk .jcarousel-pagination {
+    display: initial;
   }
 }

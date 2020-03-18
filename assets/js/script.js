@@ -21,9 +21,9 @@ $(window).scroll(function() {
   }
 
   if (wScroll > $(".produk").offset().top - 250) {
-    $(".produk .container .col-lg-3").each(function(i) {
+    $(".produk .container .row .col-lg-12 ul li").each(function(i) {
       setTimeout(() => {
-        $(".produk .container .col-lg-3")
+        $(".produk .container .row .col-lg-12 ul li")
           .eq(i)
           .addClass("show");
       }, 300 * i);
@@ -100,6 +100,28 @@ $(".overlay .close").on("click", function() {
   );
 });
 
+$(".produk .container a").click(function() {
+  const p = $(this)
+    .attr("href")
+    .replace("#", "");
+
+  goOverlay(p);
+
+  $(".next").click(function() {
+    const ov = $(".overlay").attr("id");
+    const n = ov.replace("p", "");
+    const number = parseInt(n) + 1;
+    goOverlay("p" + goNumb(number));
+  });
+
+  $(".prev").click(function() {
+    const ov = $(".overlay").attr("id");
+    const n = ov.replace("p", "");
+    const number = parseInt(n) - 1;
+    goOverlay("p" + goNumb(number));
+  });
+});
+
 // Fnc
 function goElement(element) {
   $("html,body").animate(
@@ -109,3 +131,65 @@ function goElement(element) {
     500
   );
 }
+
+function goOverlay(p) {
+  $(".overlay").attr("id", p);
+  $(".overlay img").attr("src", "assets/img/produk/" + p + ".png");
+}
+
+function goNumb(numb) {
+  if (numb === 14) {
+    return parseInt(1);
+  } else if (numb === 0) {
+    return parseInt(13);
+  } else {
+    return parseInt(numb);
+  }
+}
+
+// ! IMg multiple slider
+(function($) {
+  $(function() {
+    var jcarousel = $(".produk .container .row .col-lg-12");
+
+    jcarousel
+      .on("jcarousel:reload jcarousel:create", function() {
+        var carousel = $(this),
+          width = carousel.innerWidth();
+
+        if (width >= 600) {
+          width = width / 4;
+        }
+
+        carousel.jcarousel("items").css("width", Math.ceil(width) + "px");
+      })
+      .jcarousel({
+        wrap: "circular"
+      });
+
+    $("a.left.carousel-control").jcarouselControl({
+      target: "-=1"
+    });
+
+    $("a.right.carousel-control").jcarouselControl({
+      target: "+=1"
+    });
+
+    $(".jcarousel-pagination")
+      .on("jcarouselpagination:active", "a", function() {
+        $(this).addClass("active");
+      })
+      .on("jcarouselpagination:inactive", "a", function() {
+        $(this).removeClass("active");
+      })
+      .on("click", function(e) {
+        e.preventDefault();
+      })
+      .jcarouselPagination({
+        perPage: 1,
+        item: function(page) {
+          return '<a href="#' + page + '">' + page + "</a>";
+        }
+      });
+  });
+})(jQuery);

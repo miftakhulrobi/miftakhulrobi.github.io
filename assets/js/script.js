@@ -88,7 +88,12 @@ $('.nav-link[href="#hubungi-kami"]').click(function(e) {
 
 $(".to-top").on("click", function(event) {
   event.preventDefault();
-  goElement(".navbar");
+  $("html,body").animate(
+    {
+      scrollTop: $(".navbar").offset().top - 50
+    },
+    500
+  );
 });
 
 $(".overlay .close").on("click", function() {

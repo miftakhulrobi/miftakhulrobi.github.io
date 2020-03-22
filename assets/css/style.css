@@ -27,7 +27,7 @@ h4 {
 }
 
 .jumbotron p {
-  color: rgb(194, 191, 191);
+  color: white;
   margin: 30px 0;
   font-size: 17px;
 }
@@ -203,6 +203,16 @@ h4 {
   padding-bottom: 40px;
   font-size: 23px;
   font-weight: bold;
+}
+
+.partner .row .col:nth-child(2) img {
+  transform: scale(0.8);
+}
+
+.partner .row .col:nth-child(3) img {
+  transform: scale(0.65) rotate(1deg);
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 /*? Hubungi Kami */
@@ -593,31 +603,38 @@ h4 {
     text-transform: uppercase;
     font-weight: 500;
     color: white;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .navbar .navbar-collapse .navbar-nav a:hover {
-    color: rgb(248, 43, 96);
+    color: white;
+    background-color: rgb(248, 43, 96);
   }
 
   .navbar .navbar-collapse .navbar-nav a.aktif {
-    color: rgb(248, 43, 96);
+    color: white;
   }
 
   /*! Jumbotron */
   .jumbotron {
-    height: 795px;
+    height: 660px;
     margin-top: -100px;
   }
 
   .jumbotron h1 {
     font-size: 35px;
-    margin-top: 225px;
+    margin-top: 160px;
     font-weight: 500;
   }
 
   .jumbotron p {
     margin: 45px 0;
     font-size: 23px;
+  }
+
+  .jumbotron a {
+    margin-top: 15px;
   }
 
   .jumbotron a span.wa {
@@ -725,7 +742,7 @@ h4 {
 
   .jasa img.big {
     display: block;
-    transform: scale(0.9);
+    transform: scale(0.95);
   }
 
   .jasa h4,
@@ -742,6 +759,10 @@ h4 {
     font-size: 33px;
     font-weight: 500;
     padding-top: 80px;
+  }
+
+  .partner .row .col:nth-child(2) img {
+    margin-top: -10px;
   }
 
   /*! Hubungi Kami */

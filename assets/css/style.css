@@ -595,7 +595,16 @@ h4 {
 @media (min-width: 992px) {
   /*! Navbar */
   .navbar {
-    margin-top: 20px;
+    height: 65px;
+  }
+
+  .navbar.bg-exacta {
+    background-image: linear-gradient(
+      to right,
+      #1b056b 0%,
+      #2a1ce0 50%,
+      #4b8ff5 80%
+    );
   }
 
   .navbar .navbar-collapse .navbar-nav a {
@@ -603,8 +612,8 @@ h4 {
     text-transform: uppercase;
     font-weight: 500;
     color: white;
-    padding-left: 15px;
-    padding-right: 15px;
+    box-sizing: border-box;
+    padding: 19px 15px;
   }
 
   .navbar .navbar-collapse .navbar-nav a:hover {
@@ -619,7 +628,7 @@ h4 {
   /*! Jumbotron */
   .jumbotron {
     height: 660px;
-    margin-top: -100px;
+    margin-top: -60px;
   }
 
   .jumbotron h1 {

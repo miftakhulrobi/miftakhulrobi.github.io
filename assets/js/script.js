@@ -8,19 +8,6 @@ $(window).on("load", function() {
   }, 500);
 });
 
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.querySelector(".navbar").style.top = "0";
-    $(".navbar").addClass("bg-exacta");
-  } else {
-    document.querySelector(".navbar").style.top = "-65px";
-    $(".navbar").removeClass("bg-exacta");
-  }
-  prevScrollpos = currentScrollPos;
-};
-
 $(window).scroll(function() {
   var wScroll = $(this).scrollTop();
 
@@ -168,6 +155,7 @@ function goNumb(numb) {
 }
 
 // ! IMg multiple slider
+
 (function($) {
   $(function() {
     var jcarousel = $(".produk .container .row .col-lg-12");
@@ -213,3 +201,23 @@ function goNumb(numb) {
       });
   });
 })(jQuery);
+
+// ! Navbar scroll
+function navbarScroll() {
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.querySelector(".navbar").style.top = "0";
+      $(".navbar").addClass("bg-exacta");
+      if (currentScrollPos < $(".tentang-kami").offset().top) {
+        $(".navbar").removeClass("bg-exacta");
+      }
+    } else {
+      document.querySelector(".navbar").style.top = "-65px";
+      $(".navbar").removeClass("bg-exacta");
+    }
+    prevScrollpos = currentScrollPos;
+  };
+}
+navbarScroll();

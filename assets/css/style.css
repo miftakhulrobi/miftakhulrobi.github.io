@@ -595,9 +595,8 @@ h4 {
 @media (min-width: 992px) {
   /*! Navbar */
   .navbar {
+    margin-top: 20px;
     height: 65px;
-    position: sticky;
-    z-index: 9999;
     transition: top 0.3s;
   }
 
@@ -608,6 +607,9 @@ h4 {
       #2a1ce0 50%,
       #4b8ff5 80%
     );
+    position: sticky;
+    z-index: 9999;
+    transition: top 0.3s;
   }
 
   .navbar .navbar-collapse .navbar-nav a {
@@ -616,7 +618,7 @@ h4 {
     font-weight: 500;
     color: white;
     box-sizing: border-box;
-    padding: 19px 15px;
+    padding: 10px 15px;
   }
 
   .navbar .navbar-collapse .navbar-nav a:hover {
@@ -631,7 +633,7 @@ h4 {
   /*! Jumbotron */
   .jumbotron {
     height: 660px;
-    margin-top: -65px;
+    margin-top: -85px;
   }
 
   .jumbotron h1 {

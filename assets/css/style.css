@@ -596,6 +596,9 @@ h4 {
   /*! Navbar */
   .navbar {
     height: 65px;
+    position: sticky;
+    z-index: 9999;
+    transition: top 0.3s;
   }
 
   .navbar.bg-exacta {
@@ -628,7 +631,7 @@ h4 {
   /*! Jumbotron */
   .jumbotron {
     height: 660px;
-    margin-top: -60px;
+    margin-top: -65px;
   }
 
   .jumbotron h1 {

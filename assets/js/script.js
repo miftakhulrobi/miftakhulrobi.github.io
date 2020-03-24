@@ -8,12 +8,27 @@ $(window).on("load", function() {
   }, 500);
 });
 
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector(".navbar").style.top = "0";
+    $(".navbar").addClass("bg-exacta");
+  } else {
+    document.querySelector(".navbar").style.top = "-65px";
+    $(".navbar").removeClass("bg-exacta");
+  }
+  prevScrollpos = currentScrollPos;
+};
+
 $(window).scroll(function() {
   var wScroll = $(this).scrollTop();
+
   if (wScroll > $(".tentang-kami").offset().top - 400) {
     $(".to-top").addClass("show");
   } else {
     $(".to-top").removeClass("show");
+    $(".navbar").removeClass("bg-exacta");
   }
 
   if (wScroll > $(".tentang-kami").offset().top - 50) {

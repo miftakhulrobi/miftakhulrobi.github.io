@@ -597,7 +597,6 @@ h4 {
   .navbar {
     margin-top: 20px;
     height: 65px;
-    transition: top 0.3s;
   }
 
   .navbar.bg-exacta {
@@ -610,6 +609,7 @@ h4 {
     position: sticky;
     z-index: 9999;
     transition: top 0.3s;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
   }
 
   .navbar .navbar-collapse .navbar-nav a {

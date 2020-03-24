@@ -15,7 +15,6 @@ $(window).scroll(function() {
     $(".to-top").addClass("show");
   } else {
     $(".to-top").removeClass("show");
-    $(".navbar").removeClass("bg-exacta");
   }
 
   if (wScroll > $(".tentang-kami").offset().top - 50) {
@@ -209,13 +208,20 @@ function navbarScroll() {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
       document.querySelector(".navbar").style.top = "0";
+      $(".navbar").addClass("navbar-exacta");
       $(".navbar").addClass("bg-exacta");
-      if (currentScrollPos < $(".tentang-kami").offset().top) {
-        $(".navbar").removeClass("bg-exacta");
+      if (currentScrollPos < $(".navbar").offset().top) {
+        setTimeout(() => {
+          $(".navbar").removeClass("navbar-exacta");
+          $(".navbar").removeClass("bg-exacta");
+        }, 200);
       }
     } else {
       document.querySelector(".navbar").style.top = "-65px";
-      $(".navbar").removeClass("bg-exacta");
+      setTimeout(() => {
+        $(".navbar").removeClass("navbar-exacta");
+        $(".navbar").removeClass("bg-exacta");
+      }, 200);
     }
     prevScrollpos = currentScrollPos;
   };

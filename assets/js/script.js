@@ -57,6 +57,16 @@ $(".nav-link").click(function() {
   $(this).addClass("aktif");
 });
 
+$('.navbar-brand[href="#home"]').click(function(e) {
+  e.preventDefault();
+  goElement(".jumbotron");
+});
+
+$('.nav-link[href="#home"]').click(function(e) {
+  e.preventDefault();
+  goElement(".jumbotron");
+});
+
 $('.nav-link[href="#tentang-kami"]').click(function(e) {
   e.preventDefault();
   goElement(".tentang-kami");
@@ -91,7 +101,7 @@ $(".to-top").on("click", function(event) {
   event.preventDefault();
   $("html,body").animate(
     {
-      scrollTop: $(".navbar").offset().top - 50
+      scrollTop: $(".jumbotron").offset().top - 50
     },
     500
   );

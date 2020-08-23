@@ -39,7 +39,7 @@ body {
   width: 100%;
   padding: 0px;
   /* add */
-  background-color: #ededff;
+  background-color: #eeeef0;
   height: 100vh;
 }
 
@@ -160,8 +160,8 @@ body {
 }
 
 #page-content-wrapper .toggle-slider {
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   border-radius: 30px;
   color: #1595dd;
   background-color: #e6f3ff;
@@ -179,8 +179,8 @@ body {
 }
 
 #page-content-wrapper .profile-user {
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   border-radius: 50px;
   background-image: url(../img/core/user.jpg);
   background-position: center;

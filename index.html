@@ -1,573 +1,147 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
+
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Exacta</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sekodig | Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;515;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-            <a class="navbar-brand" href="#home">
-                <img src="assets/img/core/logo1.png" alt="Exacta.id">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link" href="#home">Home</a>
-                    <a class="nav-item nav-link" href="#tentang-kami">Tentang Kami</a>
-                    <a class="nav-item nav-link" href="#produk">Produk</a>
-                    <a class="nav-item nav-link" href="#jasa">Jasa</a>
-                    <a class="nav-item nav-link" href="#partner">Partner</a>
-                    <a class="nav-item nav-link" href="#hubungi-kami">Hubungi Kami</a>
-                    <a class="nav-item nav-link" href="#">Blog</a>
-                </div>
-            </div>
+
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <img src="/img/core/logo.png" alt="">
+                    <div class="menu-toggle">
+                        <i class="material-icons-outlined">chevron_left</i>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="menu-item active">
+                        <i class="material-icons-outlined">home</i>
+                        <span>DASHBOARD</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">
+                        <i class="material-icons-outlined">school</i>
+                        <span>DATA SISWA</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">
+                        <i class="material-icons-outlined">military_tech</i>
+                        <span>DATA PRESTASI</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">
+                        <i class="material-icons-outlined">event_available</i>
+                        <span>PRESENSI</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">
+                        <i class="material-icons-outlined">accessibility</i>
+                        <span>LAYANAN BK</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">
+                        <i class="material-icons-outlined">list_alt</i>
+                        <span>TATIB</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">
+                        <i class="material-icons-outlined">settings</i>
+                        <span>PENGATURAN</span>
+                    </a>
+                </li>
+            </ul>
         </div>
-    </nav>
+        <!-- /#sidebar-wrapper -->
 
-    <!-- Jumbotron -->
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-8 col-sm-12">
-                    <h1 class="display-4">Jadikan Perusahaanmu Selangkah Lebih Maju</h1>
-                    <p class="lead">Kami adalah praktisi IT yang terbiasa
-                        mengerjakan aplikasi dibeberapa perusahaan</p>
-                    <a href="http://api.whatsapp.com/send?phone=6285645284197" target="_blank" class="btn btn-wa"><span
-                            class="wa"></span> <span class="txt">Hubungi Kami</span></a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <!-- End Jumbotron -->
-
-    <!-- Tentang Kami -->
-    <section class="tentang-kami">
-        <h3>Tentang Kami</h3>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-11">
-                    <p class="text-center">Kami adalah praktisi IT yang terbiasa mengerjakan aplikasi dibeberapa
-                        perusahaan
-                        nasional. Beberapa
-                        produk kami adalah hasil dari pengalaman kami selama ini dalaman mengembangkan aplikasi</p>
-                </div>
-            </div>
-        </div>
-
-        <h3 class="last">Keunggulan Kami</h3>
-        <div class="container">
-            <div class="row keunggulan">
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-2">
-                            <img src="assets/img/icon/pelayanan3.png" alt="">
-                        </div>
-                        <div class="col-10">
-                            <h4>Pelayanan yang Baik</h4>
-                            <p>Siapapun Anda, apapun kebutuhanya kami berkomitment untuk memberikan pelayanan
-                                terbaik</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-2">
-                            <img src="assets/img/icon/tepat3.png" alt="">
-                        </div>
-                        <div class="col-10">
-                            <h4>Tepat Sasaran</h4>
-                            <p>Kami senantiasa mendengarkan keluhan dan masukan untuk memberikan solusi terbaik dari
-                                permasalahan yang Anda alami</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-2">
-                            <img src="assets/img/icon/kualitas3.png" alt="">
-                        </div>
-                        <div class="col-10">
-                            <h4>Berkualitas</h4>
-                            <p>Berkualitas baik dari sisi desain maupun fungsi. Produk mudah digunakan, menarik dan
-                                dapat
-                                membantu memenuhi kebutuhan Anda</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-2">
-                            <img src="assets/img/icon/money3.png" alt="">
-                        </div>
-                        <div class="col-10">
-                            <h4>Terjangkau</h4>
-                            <p>Dengan keunggulan diatas kami selalu memberikan customer kami dengan harga yang menarik
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-    <!-- End Tentang Kami -->
-
-    <!-- Produk -->
-    <section class="produk">
-        <h3>Portfolio Kami</h3>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <a href="#p1">
-                        <div class="card-produk">
-                            <img src="assets/img/produk/p1.png" class="img-fluid">
-                            <h4>Nama Produk</h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6">
-                    <a href="#p2">
-                        <div class="card-produk">
-                            <img src="assets/img/produk/p2.png" class="img-fluid">
-                            <h4>Nama Produk</h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6">
-                    <a href="#p3">
-                        <div class="card-produk">
-                            <img src="assets/img/produk/p3.png" class="img-fluid">
-                            <h4>Nama Produk</h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6">
-                    <a href="#p4">
-                        <div class="card-produk">
-                            <img src="assets/img/produk/p4.png" class="img-fluid">
-                            <h4>Nama Produk</h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6">
-                    <a href="#p5">
-                        <div class="card-produk">
-                            <img src="assets/img/produk/p5.png" class="img-fluid">
-                            <h4>Nama Produk</h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6">
-                    <a href="#p6">
-                        <div class="card-produk">
-                            <img src="assets/img/produk/p6.png" class="img-fluid">
-                            <h4>Nama Produk</h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6">
-                    <a href="#p7">
-                        <div class="card-produk">
-                            <img src="assets/img/produk/p7.png" class="img-fluid">
-                            <h4>Nama Produk</h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6">
-                    <a href="#p8">
-                        <div class="card-produk">
-                            <img src="assets/img/produk/p8.png" class="img-fluid">
-                            <h4>Nama Produk</h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6">
-                    <a href="#p9">
-                        <div class="card-produk">
-                            <img src="assets/img/produk/p9.png" class="img-fluid">
-                            <h4>Nama Produk</h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6">
-                    <a href="#p10">
-                        <div class="card-produk">
-                            <img src="assets/img/produk/p10.png" class="img-fluid">
-                            <h4>Nama Produk</h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6">
-                    <a href="#p11">
-                        <div class="card-produk">
-                            <img src="assets/img/produk/p11.png" class="img-fluid">
-                            <h4>Nama Produk</h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6">
-                    <a href="#p12">
-                        <div class="card-produk">
-                            <img src="assets/img/produk/p12.png" class="img-fluid">
-                            <h4>Nama Produk</h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6">
-                    <a href="#p13">
-                        <div class="card-produk">
-                            <img src="assets/img/produk/p13.png" class="img-fluid">
-                            <h4>Nama Produk</h4>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul>
-                        <li>
-                            <a href="#p1">
-                                <div class="card-produk">
-                                    <img src="assets/img/produk/p1.png" class="img-fluid">
-                                    <h4>Nama Produk</h4>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#p2">
-                                <div class="card-produk">
-                                    <img src="assets/img/produk/p2.png" class="img-fluid">
-                                    <h4>Nama Produk</h4>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#p3">
-                                <div class="card-produk">
-                                    <img src="assets/img/produk/p3.png" class="img-fluid">
-                                    <h4>Nama Produk</h4>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#p4">
-                                <div class="card-produk">
-                                    <img src="assets/img/produk/p4.png" class="img-fluid">
-                                    <h4>Nama Produk</h4>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#p5">
-                                <div class="card-produk">
-                                    <img src="assets/img/produk/p5.png" class="img-fluid">
-                                    <h4>Nama Produk</h4>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#p6">
-                                <div class="card-produk">
-                                    <img src="assets/img/produk/p6.png" class="img-fluid">
-                                    <h4>Nama Produk</h4>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#p7">
-                                <div class="card-produk">
-                                    <img src="assets/img/produk/p7.png" class="img-fluid">
-                                    <h4>Nama Produk</h4>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#p8">
-                                <div class="card-produk">
-                                    <img src="assets/img/produk/p8.png" class="img-fluid">
-                                    <h4>Nama Produk</h4>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#p9">
-                                <div class="card-produk">
-                                    <img src="assets/img/produk/p9.png" class="img-fluid">
-                                    <h4>Nama Produk</h4>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#p10">
-                                <div class="card-produk">
-                                    <img src="assets/img/produk/p10.png" class="img-fluid">
-                                    <h4>Nama Produk</h4>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#p11">
-                                <div class="card-produk">
-                                    <img src="assets/img/produk/p11.png" class="img-fluid">
-                                    <h4>Nama Produk</h4>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#p12">
-                                <div class="card-produk">
-                                    <img src="assets/img/produk/p12.png" class="img-fluid">
-                                    <h4>Nama Produk</h4>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#p13">
-                                <div class="card-produk">
-                                    <img src="assets/img/produk/p13.png" class="img-fluid">
-                                    <h4>Nama Produk</h4>
-                                </div>
-                            </a>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-
-            <a data-slide="prev" href="#media" class="left carousel-control"></a>
-            <a data-slide="next" href="#media" class="right carousel-control"></a>
-
-            <p class="jcarousel-pagination"><a></a></p>
-        </div>
-
-        <div class="overlay">
-            <a href="#" class="close"></a>
-            <a class="prev"></a>
-            <img src="" alt="">
-            <a class="next"></a>
-        </div>
-
-    </section>
-    <!-- End Produk -->
-
-    <!-- Produk Jasa -->
-    <section class="produk-jasa">
-        <h3>Produk yang Kami Tawarkan</h3>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-2">
-                            <img src="assets/img/icon/manrisk3.png" alt="">
-                        </div>
-                        <div class="col-10">
-                            <h4>Manrisk</h4>
-                            <p>Manrisk adalah aplikasi menejemen risiko, untuk mempermudah perusahaan Anda dalaman
-                                mengetur risiko diperusahaan Anda. Dengan aplikasi ini Anda dipermudah untuk
-                                mengidentifikasikan risiko, menangani risiko dan menganalisa risiko
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-2">
-                            <img src="assets/img/icon/proment3.png" alt="">
-                        </div>
-                        <div class="col-10">
-                            <h4>Proment</h4>
-                            <p>Proment adalah aplikasi project management, untuk mempermudah Anda dalam merencanakan
-                                project mulai dari task, budgeting sampai realisasinya, tidak hanya itu tetapi dengan
-                                proment Anda bisa mengevaluasi dari project anda secara realtime
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-2">
-                            <img src="assets/img/icon/crm3.png" alt="">
-                        </div>
-                        <div class="col-10">
-                            <h4>CRM</h4>
-                            <p>CRM (Customer Relationship Management)adalah aplikasi untuk menjaga hubungan baik dengan
-                                pelanggan, dengan Apliasi CRM anda dipermudah untuk mengatur data customer, event dengan
-                                customer, info ulang tahun customer, keluhan, potensi proyek/customer dll
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-2">
-                            <img src="assets/img/icon/custom3.png" alt="">
-                        </div>
-                        <div class="col-10">
-                            <h4>Lain-lain</h4>
-                            <p>DOCUMENTTEMPLETING, CHATING
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Produk Jasa -->
-
-    <!-- Jasa -->
-    <section class="jasa">
-        <h3>Kami Menawarkan Jasa</h3>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-5">
-                    <img src="assets/img/core/jasa.png" alt="" class="img-fluid big">
-                </div>
-                <div class="col-lg-5 col-md-12">
-                    <div class="row justify-content-center">
-                        <div class="col-2">
-                            <img src="assets/img/icon/website3.png" alt="">
-                        </div>
-                        <div class="col-10">
-                            <h4>Website</h4>
-                            <p>Kami siap setiap saat untuk membantu Anda untuk mempublikasikan produk atau perusahaan di
-                                Internet</p>
-                        </div>
-                        <div class="col-2">
-                            <img src="assets/img/icon/customapp3.png" alt="">
-                        </div>
-                        <div class="col-10">
-                            <h4>Custom Aplication</h4>
-                            <p>Kami selalu ada untuk memberikan solusi permasalahan teknologi informasi di usaha Anda.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Jasa -->
-
-    <!-- Partner -->
-    <section class="partner">
-        <h3>Partner</h3>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-8">
-                    <div class="row">
-                        <div class="col">
-                            <img src="assets/img/core/ambaper.png" alt="" class="img-fluid">
-                        </div>
-                        <div class="col">
-                            <img src="assets/img/core/pjb.png" alt="" class="img-fluid">
-                        </div>
-                        <div class="col">
-                            <img src="assets/img/core/pjbs.gif" alt="" class="img-fluid">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-    <!-- End Partner -->
-
-    <!-- Hubungi Kami -->
-    <section class="hubungi-kami">
-        <h3>Hubungi Kami</h3>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-12 col-hk">
-                    <form action="">
-                        <div class="form-group row">
-                            <div class="col-md-6">
-                                <input type="text" name="name" class="form-control mt-3" placeholder="Nama Anda">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" name="email" class="form-control mt-3" placeholder="Email Anda">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="subject" class="form-control" placeholder="Subyek">
-                        </div>
-                        <div class="form-group">
-                            <textarea type="text" name="message" class="form-control" rows="6"
-                                placeholder="Pesan Anda"></textarea>
-                        </div>
-                        <button type="button" class="btn">Kirim Pesan</button>
-                    </form>
-                </div>
-                <div class="col-lg-6 col-md-12 col-hk">
-                    <img src="assets/img/core/logo1.png">
-                    <p>Jadikan perusahaanmu lebih maju dengan mengikuti sosial media yang tertera dibawah</p>
-
-                    <div class="sosmed">
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
                         <div class="row">
-                            <div class="col-md-6">
-                                <a href="http://api.whatsapp.com/send?phone=6285645284197" target="_blank"><span
-                                        class="icon icon-wa"></span> <span class="nickname">085645284197</span></a>
+                            <div class="col icon-slider">
+                                <div class="toggle-slider" id="menu-toggle">
+                                    <i class="material-icons-outlined">chevron_right</i>
+                                </div>
                             </div>
-                            <div class="col-md-6">
-                                <a href="mailto:exacta.id@gmail.com"><span class="icon icon-email"></span> <span
-                                        class="nickname">exacta.id@gmail.com</span></a>
+                            <div class="col">
+                                <h3>DASHBOARD</h3>
                             </div>
-                            <div class="col-md-6">
-                                <a href="https://web.facebook.com/exacta.id/" target="_blank"><span
-                                        class="icon icon-fb"></span> <span class="nickname">Exacta.id</span></a>
+                            <div class="col">
+                                <div class="profile-user float-right"></div>
                             </div>
-                            <div class="col-md-6">
-                                <a href="#" target="_blank"><span class="icon icon-twitter"></span> <span
-                                        class="nickname">Exacta.id</span></a>
-                            </div>
-                            <div class="col-md-6">
-                                <a href="https://instagram.com/exacta.id/" target="_blank"><span
-                                        class="icon icon-ig"></span> <span class="nickname">@Exacta.id</span></a>
-                            </div>
-                            <div class="col-md-6">
-                                <a href="#" target="_blank"><span class="icon icon-yt"></span> <span
-                                        class="nickname">Exacta.id</span></a>
-                            </div>
+                        </div>
+                        <div class="card-content p-3">
+                            <h1>Simple Sidebar</h1>
+                            <p>This template has a responsive menu toggling system. The menu will appear collapsed on
+                                smaller screens, and will appear non-collapsed on larger screens. When toggled using the
+                                button below, the menu will appear/disappear. On small screens, the page content will be
+                                pushed off canvas.</p>
+                            <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- End Page Content -->
+    </div>
 
-        <!-- Footer -->
-        <div class="footer">
-            <p>Copyright 2020 - Exacta.id</p>
-        </div>
-        <!-- End Footer -->
-    </section>
-    <!-- End Hubungi Kami -->
-
-
-
-    <div class="to-top"></div>
-
-
-    <script src="assets/js/jquery-3.1.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+    <script>
+        const sidebarWrapper = document.querySelector('#sidebar-wrapper');
+        const ulSidebarNav = document.querySelector('ul.sidebar-nav');
+        const logo = document.querySelector('.sidebar-nav img');
+        const menuItem = Array.from(document.querySelectorAll('.sidebar-nav li a.menu-item'));
 
-    <script src="assets/js/jcarousel.min.js"></script>
-    <script src="assets/js/script.js"></script>
+        $(".menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+
+            sidebarWrapper.classList.toggle('minimized');
+            ulSidebarNav.classList.toggle('minimized');
+            logo.classList.toggle('minimized');
+            menuItem.forEach(m => m.classList.toggle('minimized'));
+        });
+
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+
+            sidebarWrapper.classList.toggle('minimized');
+            ulSidebarNav.classList.toggle('minimized');
+            logo.classList.toggle('minimized');
+            menuItem.forEach(m => m.classList.toggle('minimized'));
+        });
+    </script>
+
 </body>
 
 </html>

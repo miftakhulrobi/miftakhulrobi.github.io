@@ -1,0 +1,110 @@
+html,
+body {
+  font-family: "Quicksand", sans-serif;
+  height: 100%;
+  background-color: #0bb2e7;
+}
+
+.section-login {
+  width: auto;
+}
+
+/* Area login */
+.section-login .area-login {
+  height: 100vh;
+  display: grid;
+  align-content: space-evenly;
+  padding: 0 50px;
+  background-color: white;
+}
+
+.section-login h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.section-login .area-login img {
+  height: 40px;
+}
+
+.section-login .input-group > .input-group-prepend > .input-group-text {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background-color: #e6f3ff;
+  border: 1px solid #e6f3ff;
+  width: 50px;
+  position: relative;
+}
+
+.section-login .form-control-round {
+  height: 45px;
+  border-radius: 50px;
+  background-color: #e6f3ff;
+  border: 1px solid #e6f3ff;
+}
+
+.section-login img.icon {
+  position: absolute;
+  width: 24px;
+}
+
+.btn-ve {
+  color: white;
+  background-color: rgb(6, 5, 8);
+  height: 45px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.btn-ve:hover {
+  color: white;
+}
+
+.section-login p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #7c7878;
+}
+
+.section-login .link-forgot-password {
+  margin-top: 30px;
+  color: #7c7878;
+  padding-bottom: 50px;
+}
+
+/* banner */
+.section-login .area-banner {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-login .col-pd {
+  padding-right: 0px;
+  padding-left: 0;
+}
+
+.section-login .area-banner img {
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+}
+
+/* ! RESPONSIVE */
+
+@media (max-width: 575.98px) {
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 991.98px) {
+  .section-login .col-lg-8 {
+    display: none;
+  }
+}
+
+@media (max-width: 1199.98px) {
+}

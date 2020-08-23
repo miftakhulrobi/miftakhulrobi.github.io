@@ -39,7 +39,7 @@ body {
   width: 100%;
   padding: 0px;
   /* add */
-  background-color: #eeeef0;
+  background-color: #FAFAFA;
   height: 100vh;
 }
 
@@ -192,6 +192,7 @@ body {
   background-color: white;
   border-radius: 20px;
   margin-top: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 576px) {

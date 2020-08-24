@@ -193,6 +193,8 @@ body {
   border-radius: 20px;
   margin-top: 20px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 /* ! INPUT MOBILE */
@@ -386,6 +388,12 @@ input[type="color"]:focus,
     margin-top: -10px;
     width: 50px;
     height: 50px;
+  }
+
+  /* ! CARD CONTENT */
+  #page-content-wrapper .card-content {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   /* ! INPUT LARGE */

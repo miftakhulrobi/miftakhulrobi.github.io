@@ -6,13 +6,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sekodig | Dashboard</title>
+    <title>Sekodig | Detail Siswa</title>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;515;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/data_siswa.css">
 
 </head>
 
@@ -29,13 +30,13 @@
                     </div>
                 </li>
                 <li>
-                    <a href="#" class="menu-item active">
+                    <a href="#" class="menu-item">
                         <i class="material-icons-outlined">home</i>
                         <span>DASHBOARD</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="menu-item">
+                    <a href="#" class="menu-item active">
                         <i class="material-icons-outlined">school</i>
                         <span>DATA SISWA</span>
                     </a>
@@ -86,19 +87,51 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <h3>DASHBOARD</h3>
+                                <h3>DETAIL SISWA</h3>
                             </div>
                             <div class="col">
                                 <div class="profile-user float-right"></div>
                             </div>
                         </div>
                         <div class="card-content p-3">
-                            <h1>Lorem Ipsum Main Title</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea magni sequi quae a quibusdam
-                                incidunt corporis natus? Quibusdam est cumque aliquid architecto aut, nisi inventore
-                                perspiciatis? Laudantium sequi provident placeat quasi tempore cum ullam, suscipit error
-                                eveniet repellendus nemo unde sapiente ea blanditiis ex! Vitae molestiae nobis quisquam
-                                praesentium maxime!</p>
+                            <div class="bg-content-header"></div>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-12">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="image-profile float-right"
+                                                style="background-image: url('/img/core/user.jpg');"></div>
+                                        </div>
+                                        <div class="col-9">
+                                            <table class="nis">
+                                                <tr>
+                                                    <td>Nomor Induk Siswa</td>
+                                                    <td class="asign">:</td>
+                                                    <td>90748836463</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Nomor Induk Siswa Nasional</td>
+                                                    <td class="asign">:</td>
+                                                    <td>984783776467334</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="col-3 col-hide"></div>
+                                        <div class="col-lg-9 btn-prestasi">
+                                            <td>
+                                                <a href="" class="btn btn-app-flat-sm mr-1">Prestasi Akademik</a>
+                                            </td>
+                                            <td>
+                                                <a href="" class="btn btn-app-flat-sm-outline mr-1">Prestasi Non
+                                                    Akademik</a>
+                                            </td>
+                                            <td>
+                                                <a href="" class="btn btn-app-flat-sm-outline">Buku Tatib</a>
+                                            </td>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -116,6 +149,7 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
     <script src="/js/script.js"></script>
+    <script src="/js/data_siswa.js"></script>
 
 </body>
 

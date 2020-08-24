@@ -195,6 +195,114 @@ body {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* ! INPUT MOBILE */
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  background-color: #e6f3ff;
+  border-color: #e6f3ff;
+  box-shadow: 0 0 0 #e6f3ff inset, 0 0 0 #e6f3ff;
+  outline: 0 none;
+}
+
+.input-group > .input-group-prepend > .input-group-text {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background-color: #e6f3ff;
+  border: 1px solid #e6f3ff;
+  width: 50px;
+  position: relative;
+  height: 30px;
+  color: #1595dd;
+}
+
+.form-control-round {
+  height: 30px;
+  border-radius: 50px;
+  background-color: #e6f3ff;
+  border: 1px solid #e6f3ff;
+  font-size: 12px;
+}
+
+/* ! TABLE MOBILE */
+.table thead {
+  background-color: #1595dd;
+  border-top-left-radius: 30px;
+}
+
+.table tr th {
+  font-size: 13px;
+}
+
+.table td.options {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* ! BUTTON MOBILE*/
+.btn-app {
+  color: white;
+  height: 30px;
+  background-color: #1595dd;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.btn-app:hover {
+  color: white;
+}
+
+.btn-app i {
+  padding-right: 5px;
+}
+
+/* sm */
+.btn-app-sm {
+  color: white;
+  height: 30px;
+  background-color: #1595dd;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn-app-sm i {
+  padding-right: 5px;
+  font-size: 16px;
+}
+
+.btn-app-sm.bg-blue-white.text-orange {
+  background-color: #e6f3ff;
+  color: orange;
+}
+
+.btn-app-sm.bg-blue-white.text-red {
+  background-color: #e6f3ff;
+  color: red;
+}
+
 @media (min-width: 576px) {
 }
 
@@ -278,6 +386,22 @@ body {
     margin-top: -10px;
     width: 50px;
     height: 50px;
+  }
+
+  /* ! INPUT LARGE */
+  .input-group > .input-group-prepend > .input-group-text {
+    height: 40px;
+  }
+
+  .form-control-round {
+    height: 40px;
+    font-size: 14px;
+  }
+
+  /* ! BUTTON LARGE*/
+  .btn-app {
+    height: 40px;
+    font-size: 14px;
   }
 }
 

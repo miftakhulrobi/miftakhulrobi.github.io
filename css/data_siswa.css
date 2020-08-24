@@ -1,0 +1,141 @@
+/* ! DATA SISWA */
+.card-content .col-pd {
+  padding-left: 0px;
+}
+
+.table tr th:nth-child(1) {
+  text-align: start;
+}
+
+.table tr th:nth-child(2) {
+  text-align: center;
+}
+
+.table tr th:nth-child(3) {
+  text-align: end;
+}
+
+/* ! DETAIL SISWA */
+.card-content {
+  position: relative;
+}
+
+.card-content .bg-content-header {
+  height: 70px;
+  width: 100%;
+  background-color: #1595dd;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card-content .image-profile {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-content table.nis {
+  margin-top: 0;
+}
+
+.card-content table.nis td {
+  color: white;
+  font-weight: 400;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.card-content table.nis td.asign {
+  width: 20px;
+  text-align: center;
+}
+
+.card-content .btn-prestasi {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.card-content .col-hide {
+  display: none;
+}
+
+/* ! BUTTON MOBILE */
+.btn-app-flat-sm {
+  color: white;
+  height: 30px;
+  background-color: #1595dd;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.btn-app-flat-sm:hover {
+  color: white;
+  background-color: #1595dd;
+}
+
+.btn-app-flat-sm-outline {
+  color: #1595dd;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid #1595dd;
+}
+
+.btn-app-flat-sm-outline:hover {
+  color: #1595dd;
+  background-color: transparent;
+}
+
+@media (min-width: 576px) {
+}
+
+/* ! MEDIA LARGE */
+@media (min-width: 768px) {
+  /* ! DETAIL SISWA */
+  .card-content .bg-content-header {
+    height: 90px;
+  }
+
+  .card-content table.nis {
+    margin-top: 5px;
+  }
+
+  .card-content table.nis td {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .card-content .image-profile {
+    width: 125px;
+    height: 125px;
+    float: right;
+  }
+
+  .card-content table.nis td.asign {
+    width: 55px;
+  }
+
+  .card-content .btn-prestasi {
+    margin-top: -35px;
+    text-align: start;
+  }
+
+  .card-content .col-hide {
+    display: inline;
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}

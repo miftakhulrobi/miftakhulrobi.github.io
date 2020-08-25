@@ -305,6 +305,17 @@ input[type="color"]:focus,
   color: red;
 }
 
+/* ! BACKGROUND FIXED */
+.bg-wrapper {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 1366px;
+  height: 100%;
+  background-image: url(../img/core/bg.png);
+  /* z-index: 0; */
+}
+
 @media (min-width: 576px) {
 }
 

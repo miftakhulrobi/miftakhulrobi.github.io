@@ -5,22 +5,24 @@ const menuItem = Array.from(
   document.querySelectorAll(".sidebar-nav li a.menu-item")
 );
 
-$(".menu-toggle").click(function (e) {
+const classMenuToggle = document.querySelector(".menu-toggle");
+const idMenuToggle = document.querySelector("#menu-toggle");
+
+classMenuToggle.addEventListener("click", function (e) {
   e.preventDefault();
+  toggleSlider();
+});
+
+idMenuToggle.addEventListener("click", function (e) {
+  e.preventDefault();
+  toggleSlider();
+});
+
+function toggleSlider() {
   $("#wrapper").toggleClass("toggled");
 
   sidebarWrapper.classList.toggle("minimized");
   ulSidebarNav.classList.toggle("minimized");
   logo.classList.toggle("minimized");
   menuItem.forEach((m) => m.classList.toggle("minimized"));
-});
-
-$("#menu-toggle").click(function (e) {
-  e.preventDefault();
-  $("#wrapper").toggleClass("toggled");
-
-  sidebarWrapper.classList.toggle("minimized");
-  ulSidebarNav.classList.toggle("minimized");
-  logo.classList.toggle("minimized");
-  menuItem.forEach((m) => m.classList.toggle("minimized"));
-});
+}

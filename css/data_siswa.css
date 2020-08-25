@@ -3,6 +3,10 @@
   padding-left: 0px;
 }
 
+.card-content .table-responsive {
+  margin-top: 20px;
+}
+
 .table tr th:nth-child(1) {
   text-align: start;
 }
@@ -55,6 +59,16 @@
   text-align: center;
 }
 
+.card-content table.nis span.nis1,
+.card-content table.nis span.nisn1 {
+  display: initial;
+}
+
+.card-content table.nis span.nis2,
+.card-content table.nis span.nisn2 {
+  display: none;
+}
+
 .card-content .btn-prestasi {
   margin-top: 10px;
   text-align: center;
@@ -63,6 +77,67 @@
 .card-content .col-hide {
   display: none;
 }
+
+.card-content .text-m-sm {
+  display: initial;
+}
+
+.card-content .text-m-lg {
+  display: none;
+}
+
+/*  */
+.card-content .title-table {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.card-content .title-table.in-table {
+  margin-left: -45px;
+}
+
+.card-content .table-responsive tr td {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.card-content .table-responsive tr td.numb {
+  width: 30px;
+}
+
+.card-content .table-responsive tr td.text-c-grey {
+  color: grey;
+}
+
+  /* ! CREATE SISWA LARGE */
+  .card-content .image-profile-upload {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  .card-content .image-profile-upload i {
+    padding: 5px;
+    border-radius: 30px;
+    background-color: #1595dd;
+    color: white;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  .card-content .table-responsive input {
+    background-color: #e4e6e6;
+    border: 1px solid #f2f3f3;
+    width: 500px;
+  }
+  
+  .card-content .table-responsive tr td:nth-child(1), .card-content .table-responsive tr td:nth-child(2), .card-content .table-responsive tr td:nth-child(3){
+    padding-top: 20px;
+  }
 
 /* ! BUTTON MOBILE */
 .btn-app-flat-sm {
@@ -99,6 +174,11 @@
 
 /* ! MEDIA LARGE */
 @media (min-width: 768px) {
+  /* ! DATA SISWA */
+  .card-content .table-responsive {
+    margin-top: 0px;
+  }
+
   /* ! DETAIL SISWA */
   .card-content .bg-content-header {
     height: 90px;
@@ -124,6 +204,16 @@
     width: 55px;
   }
 
+  .card-content table.nis span.nis1,
+  .card-content table.nis span.nisn1 {
+    display: none;
+  }
+
+  .card-content table.nis span.nis2,
+  .card-content table.nis span.nisn2 {
+    display: initial;
+  }
+
   .card-content .btn-prestasi {
     margin-top: -35px;
     text-align: start;
@@ -131,6 +221,71 @@
 
   .card-content .col-hide {
     display: inline;
+  }
+
+  .card-content .text-m-sm {
+    display: none;
+  }
+
+  .card-content .text-m-lg {
+    display: initial;
+  }
+
+  /*  */
+  .card-content .title-table {
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .card-content .title-table.in-table {
+    margin-left: -45px;
+  }
+
+  .card-content .table-responsive tr td {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .card-content .table-responsive tr td.numb {
+    width: 30px;
+  }
+
+  .card-content .table-responsive tr td.text-c-grey {
+    color: grey;
+  }
+
+  .card-content .table-responsive tr td:nth-child(2) {
+    max-width: 300px;
+  }
+
+  /* ! CREATE SISWA LARGE */
+  .card-content .image-profile-upload {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  .card-content .image-profile-upload i {
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #1595dd;
+    color: white;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  .card-content .table-responsive input {
+    background-color: #e4e6e6;
+    border: 1px solid #f2f3f3;
+    width: 500px;
+  }
+
+  .card-content .table-responsive tr td:nth-child(1), .card-content .table-responsive tr td:nth-child(2), .card-content .table-responsive tr td:nth-child(3){
+    padding-top: 20px;
   }
 }
 
